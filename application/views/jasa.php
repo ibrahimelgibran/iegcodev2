@@ -68,6 +68,11 @@
             </select>
         </div> -->
         <!-- END: Pagination -->
+
+
+        <!-- BISA ISI CONTENT KOSONG -->
+        <!-- <h1>Oops, Kosong!</h1> -->
+        <!-- AKHHIRANNYA -->
     </div>
 </div>
 
@@ -95,3 +100,4 @@
     </div>
 </div>
                     <!-- END: Delete Confirmation Modal -->
+                    

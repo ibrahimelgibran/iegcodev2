@@ -702,21 +702,26 @@ License: You must have a valid license purchased only from themeforest(the above
                 <div class="notification-content pt-2 dropdown-menu">
                     <div class="notification-content__box dropdown-content">
                         <div class="notification-content__title">Notifications</div>
-                        <?php foreach ($bill as $row) : ?>
-                            <div class="cursor-pointer relative flex items-center mt-5">
-                                <div class="w-12 h-12 flex-none image-fit mr-1">
-                                    <img class="rounded-full" src="<?= base_url('asset') ?>/user.png">
-                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
-                                </div>
-                                <div class="ml-2 overflow-hidden">
-                                    <div class="flex items-center">
-                                        <a href="javascript:;" class="font-medium truncate mr-5"><?= $row->name ?></a>
-                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap"><?= date("d F Y H:i:s", strtotime($row->transaction_time)); ?></div>
-                                    </div>
-                                    <div class="w-full truncate text-slate-500 mt-0.5">Telah melakukan order product</div>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
+                        <?php if(isset($bill) && !empty($bill)) : ?>
+    <?php foreach ($bill as $row) : ?>
+        <div class="cursor-pointer relative flex items-center mt-5">
+            <div class="w-12 h-12 flex-none image-fit mr-1">
+                <img class="rounded-full" src="<?= base_url('asset') ?>/user.png">
+                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+            </div>
+            <div class="ml-2 overflow-hidden">
+                <div class="flex items-center">
+                    <a href="javascript:;" class="font-medium truncate mr-5"><?= $row->name ?></a>
+                    <div class="text-xs text-slate-400 ml-auto whitespace-nowrap"><?= date("d F Y H:i:s", strtotime($row->transaction_time)); ?></div>
+                </div>
+                <div class="w-full truncate text-slate-500 mt-0.5">Telah melakukan order product</div>
+            </div>
+        </div>
+    <?php endforeach; ?>
+<?php else : ?>
+    <p>Tidak ada data transaksi yang tersedia.</p>
+<?php endif; ?>
+
                     </div>
                 </div>
             </div>

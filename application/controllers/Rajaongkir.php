@@ -86,5 +86,7 @@ class Rajaongkir extends CI_Controller
         echo "<option value='ANTERAJA'>Anteraja</option>";
         echo "<option value='GO-SEND'>Gojek</option>";
         echo "<option value='GRAB-SEND'>Grab</option>";
+        echo "<option value='SEND-EMAIL'>Kirim Email</option>";
+        echo "<option value='SEND-WA'>Kirim Whatapp</option>";
     }
 }

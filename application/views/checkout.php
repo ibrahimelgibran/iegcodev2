@@ -93,19 +93,21 @@
             </div>
             <div id="ticket" class="tab-pane active" role="tabpanel" aria-labelledby="ticket-tab">
                 <div class="box p-2 mt-5">
-                    <a href="javascript:;" data-tw-toggle="modal" data-tw-target="#add-item-modal" class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-darkmode-600 hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md">
+                <a href="#" class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-darkmode-600 hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md">
+                    <!-- <a href="javascript:;" data-tw-toggle="modal" data-tw-target="#add-item-modal" class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-darkmode-600 hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md"> -->
                         <div class="max-w-[50%] truncate mr-1">
-                            <img class="mt-2" src="<?= site_url('asset') ?>/bca.png" width="60">
+                            <img class="mt-2" src="<?= site_url('asset') ?>/bsi.png" width="100">
                         </div>
                         <div class="text-slate-500"></div>
-                        <div class="ml-auto font-medium">6750527090 / Shoppify Commerce</div>
+                        <div class="ml-auto font-medium">7205751291 | A.n IBRAHIM EL GIBRAN</div>
                     </a>
-                    <a href="javascript:;" data-tw-toggle="modal" data-tw-target="#add-item-modal" class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-darkmode-600 hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md">
+                    <a href="#" class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-darkmode-600 hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md">
+                    <!-- <a href="javascript:;" data-tw-toggle="modal" data-tw-target="#add-item-modal" class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-darkmode-600 hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md"> -->
                         <div class="max-w-[50%] truncate mr-1">
-                            <img class="mt-2" src="<?= site_url('asset') ?>/mandiri.png" width="80">
+                            <img class="mt-2" src="<?= site_url('asset') ?>/dana.png" width="100">
                         </div>
                         <div class="text-slate-500"></div>
-                        <div class="ml-auto font-medium">1918009817 / Shoppify Commerce</div>
+                        <div class="ml-auto font-medium">085876076005 | A.n IBRAHIM EL GIBRAN</div>
                     </a>
                 </div>
 
