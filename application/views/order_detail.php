@@ -40,6 +40,7 @@
                    <div class="flex items-center"> <i data-lucide="clipboard" class="w-4 h-4 text-slate-500 mr-2"></i> <b>Courier:</b>&nbsp; <?= $invoice->ekspedisi ?> </div>
                    <div class="flex items-center mt-3"> <i data-lucide="calendar" class="w-4 h-4 text-slate-500 mr-2"></i> <b>Tracking Order:</b>&nbsp; <?= $invoice->tracking_id ?> <i data-lucide="copy" class="w-4 h-4 text-slate-500 ml-2"></i> </div>
                    <div class="flex items-center mt-3"> <i data-lucide="map-pin" class="w-4 h-4 text-slate-500 mr-2"></i> <b>Address:</b>&nbsp; <small><?= $invoice->alamat ?>, <?= $invoice->city ?>.</small> </div>
+                   <div class="flex items-center mt-3"> <i data-lucide="clipboard" class="w-4 h-4 text-slate-500 mr-2"></i> <b>Notes:</b>&nbsp; <small><?= $invoice->notes ?></div>
                </div>
            </div>
            <div class="col-span-12 lg:col-span-7 2xl:col-span-8">

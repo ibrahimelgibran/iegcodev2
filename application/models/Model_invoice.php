@@ -18,6 +18,7 @@ class Model_invoice extends CI_Model
 		$tracking_id = $this->input->post('tracking_id');
 		$email = $this->input->post('email');
 		$status = $this->input->post('status');
+		$notes = $this->input->post('notes');
 
 		$invoice = array (
 			'order_id' 			=> $order_id,
@@ -32,6 +33,7 @@ class Model_invoice extends CI_Model
 			'tracking_id' 		=> $tracking_id,
 			'email' 			=> $email,
 			'status' 			=> $status,
+			'notes' 			=> $notes,
 			'transaction_time' 	=> date('Y-m-d H:i:s'),
 			'payment_limit' 	=> date('Y-m-d H:i:s', mktime( date('H'), date('i'), date('s'), date('m'), date('d') + 1, date('Y'))),
 		);

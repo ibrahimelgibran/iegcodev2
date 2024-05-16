@@ -74,6 +74,10 @@
                                         <label for="post-form-7" class="form-label">Delivery Service <small class="text-danger">*</small></label>
                                         <select name="ekspedisi" id="ekspedisi" class="form-control"></select>
                                     </div>
+                                    <div class="mb-5">
+                                        <label for="post-form-7" class="form-label">Notes <small class="text-danger">*</small></label>
+                                        <input type="text" id="notes" name="notes" class="form-control" placeholder="Catatan" autocomplete="off" required>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex mt-5">

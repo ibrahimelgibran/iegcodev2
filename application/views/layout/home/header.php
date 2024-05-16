@@ -32,7 +32,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="mobile-menu md:hidden">
         <div class="mobile-menu-bar">
             <a href="" class="flex mr-auto">
-                <img alt="IEG PHOTO" class="w-6" src="<?= site_url('asset') ?>/admin/dist/images/logo.png">
+                <img alt="IEG PHOTO" class="w-6" style="width: auto; height: 40px" src="<?= site_url('asset') ?>/admin/dist/images/logo.png">
             </a>
             <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
         </div>
@@ -114,7 +114,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="h-full flex items-center">
             <!-- BEGIN: Logo -->
             <a href="" class="-intro-x hidden md:flex">
-                <img alt="IEG PHOTO" class="w-6" style="witdh:auto; height:100%" src="<?= site_url('asset') ?>/admin/dist/images/logo.png">
+                <img alt="IEG PHOTO" class="w-6" style="witdh:auto; height: 100%;" src="<?= site_url('asset') ?>/admin/dist/images/logo.png">
                 <span class="text-white text-lg ml-3" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> IEGCODE </span>
             </a>
             <!-- END: Logo -->
@@ -166,7 +166,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="side-menu__title"> Pembuatan Website </div>
                         </a>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a href="<?= base_url('categories/shirt') ?>" class="side-menu side-menu">
                             <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
                             <div class="side-menu__title">  T-Shirt
@@ -208,7 +208,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="side-menu__icon"> <i data-lucide="heart"></i> </div>
                             <div class="side-menu__title"> Fashion & Make Up </div>
                         </a>
-                    </li> -->
+                    </li>
 
                     <li class="side-nav__devider my-6"></li>
                 </ul>

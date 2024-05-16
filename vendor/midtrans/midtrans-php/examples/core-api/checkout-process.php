@@ -100,7 +100,12 @@ $transaction_data = array(
     'customer_details'    => $customer_details
   );
 
-
+  try {
+    $response = CoreApi::charge($transaction_data);
+} catch (Exception $e) {
+    echo $e->getMessage();
+    die();
+}
 
 // Success
 if ($response->transaction_status == 'capture') {
