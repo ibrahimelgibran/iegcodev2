@@ -2,8 +2,8 @@
 <!--
 Template Name: Icewall - HTML Admin Dashboard Template
 Author: Left4code
-Website: http://www.left4code.com/
-Contact: muhammadrizki@left4code.com
+Website: http://www.iegcode.my.id/
+Contact: iegcodeid@gmail.com
 Purchase: https://themeforest.net/user/left4code/portfolio
 Renew Support: https://themeforest.net/user/left4code/portfolio
 License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.

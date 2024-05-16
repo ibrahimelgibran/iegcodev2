@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
-Template Name: Icewall - HTML Admin Dashboard Template
-Author: Left4code
-Website: http://www.left4code.com/
-Contact: muhammadrizki@left4code.com
+Template Name: iegcode - HTML Admin Dashboard Template
+Author: iegcode
+Website: http://www.iegcode.my.id/
+Contact: iegcodeid@gmail.com
 Purchase: https://themeforest.net/user/left4code/portfolio
 Renew Support: https://themeforest.net/user/left4code/portfolio
 License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
@@ -104,7 +104,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <nav aria-label="breadcrumb" class="-intro-x h-full mr-auto">
                 <ol class="breadcrumb breadcrumb-light">
                     <li class="breadcrumb-item"><a href=""><?= $title ?></a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="<?= site_url('admin/dashboard') ?>">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="<?= site_url('admin/dashboard') ?>"></a>Dashboard</li>
                 </ol>
             </nav>
             <!-- END: Breadcrumb -->
