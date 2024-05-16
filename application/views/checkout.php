@@ -123,13 +123,7 @@
                     <br>
                     <p>• E-Wallet: <br>  <strong>DANA 085876076005</strong> An. Ibrahim El Gibran</p>
                     <br>
-                    <p>Jika anda sudah melakukan pembayaran <br> silakan kirimkan bukti setelah anda <strong>Pay Order.</strong></p> 
-					<!-- <ul>
-						<li>Pembayaran dengan Virtual Account Bank  <strong>BSI 7205751291</strong> An. Ibrahim El Gibran</li>
-						<li>Pembayaran dengan E-Wallet <strong>DANA 085876076005</strong> An. Ibrahim El Gibran</li>
-					</ul>
-					<p>Jika Anda sudah melakukan pembayaran, silakan kirimkan bukti transfernya ke sini</p> -->
-                    
+                    <p>Jika anda sudah melakukan pembayaran <br> silakan kirimkan bukti setelah anda <strong>Pay Order.</strong></p>                     
                 </div>
 
                 <div class="box p-5 mt-5">

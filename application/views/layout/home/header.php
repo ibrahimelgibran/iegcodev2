@@ -31,7 +31,7 @@ License: You must have a valid license purchased only from themeforest(the above
        <!-- button chackbok -->
        <button onclick="window.location.href='https://wa.me/6285876076005?text=Hallo%20IEGCODE...'">
 			<img
-				src="./asset/chat.png"
+				src="https://cdn-icons-png.freepik.com/256/724/724715.png?semt=ais_hybrid"
 				alt="Icon Pesan"
 				width="24"
 				height="24"

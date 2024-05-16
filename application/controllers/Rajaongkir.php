@@ -4,7 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Rajaongkir extends CI_Controller
 {
 
-    private $api_key = 'ad6f75cae274cc79ae3d0cd18aba96e5';
+    private $api_key = 'fe2ccff9bda12e8d9f44ff7a0b87a36f';
 
     public function provinsi()
     {
