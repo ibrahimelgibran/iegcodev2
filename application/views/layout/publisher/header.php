@@ -718,3 +718,28 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="wrapper-box">
 
             <!-- END: Side Menu -->
+            
+            <footer>
+  made with ❤️ by
+  <a href="http://ibrahimelgibran.com">iegcode </a>
+  <style>
+    footer {
+      color: #fff;
+     margin-bottom: -70px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      font-size: 15px;
+      position: fixed;
+      padding: 20px 0;
+      font-weight: bold;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768spx) {
+      footer {
+        margin-left: 0; /* Reset margin-left */
+      }
+    }
+  </style>
+</footer>

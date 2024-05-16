@@ -32,7 +32,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="block xl:grid grid-cols-2 gap-4">
             <!-- BEGIN: Register Info -->
             <div class="hidden xl:flex flex-col min-h-screen">
-                <a href="" class="-intro-x flex items-center pt-5">
+                <a href="#" class="-intro-x flex items-center pt-5">
                     <img alt="IEG PHOTO" class="w-6" style="width: auto; height: 40px" src="<?= site_url('asset') ?>/admin/dist/images/logo.png">
                     <span class="text-white text-lg ml-3" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> IEGCODE </span>
                 </a>

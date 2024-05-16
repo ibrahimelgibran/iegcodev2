@@ -52,7 +52,7 @@
                                 <div class="mt-5">
                                     <div class="mb-5">
                                         <label for="post-form-7" class="form-label">Your Address <small class="text-danger">*</small></label>
-                                        <input type="text" id="alamat" name="alamat" class="form-control" placeholder="Your mobile phone" autocomplete="off" required>
+                                        <input type="text" id="alamat" name="alamat" class="form-control" placeholder="Your Address" autocomplete="off" required>
                                     </div>
 
                                     <div class="mb-5">
@@ -113,6 +113,23 @@
                         <div class="text-slate-500"></div>
                         <div class="ml-auto font-medium">085876076005 | A.n IBRAHIM EL GIBRAN</div>
                     </a>
+                </div>
+
+                <div class="box p-5 mt-5">
+                    
+                    <h1>Silakan lewati pembayaran dengan prosedur berikut:</h1>
+                    <br>
+                    <p>• Virtual Account Bank: <br>  <strong>BSI 7205751291</strong> An. Ibrahim El Gibran</p>
+                    <br>
+                    <p>• E-Wallet: <br>  <strong>DANA 085876076005</strong> An. Ibrahim El Gibran</p>
+                    <br>
+                    <p>Jika anda sudah melakukan pembayaran <br> silakan kirimkan bukti setelah anda <strong>Pay Order.</strong></p> 
+					<!-- <ul>
+						<li>Pembayaran dengan Virtual Account Bank  <strong>BSI 7205751291</strong> An. Ibrahim El Gibran</li>
+						<li>Pembayaran dengan E-Wallet <strong>DANA 085876076005</strong> An. Ibrahim El Gibran</li>
+					</ul>
+					<p>Jika Anda sudah melakukan pembayaran, silakan kirimkan bukti transfernya ke sini</p> -->
+                    
                 </div>
 
                 <div class="box p-5 mt-5">

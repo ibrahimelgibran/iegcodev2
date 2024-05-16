@@ -28,6 +28,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END: Head -->
 
 <body class="main">
+
+    
+
     <!-- BEGIN: Mobile Menu -->
     <div class="mobile-menu md:hidden">
         <div class="mobile-menu-bar">
@@ -206,6 +209,12 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="side-menu__title"> Invoice History </div>
                         </a>
                     </li>
+                    <li>
+                        <a href="https://wa.me/6285876076005?text=Hallo%20IEGCODE..." class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="message-square"></i> </div>
+                            <div class="side-menu__title"> Live Chat </div>
+                        </a>
+                    </li>
                     <li class="side-nav__devider my-6"></li>
                     <li>
                         <a href="<?= base_url('profile') ?>" class="side-menu">
@@ -222,3 +231,29 @@ License: You must have a valid license purchased only from themeforest(the above
                 </ul>
             </nav>
             <!-- END: Side Menu -->
+
+            
+            <footer>
+  made with ❤️ by
+  <a href="http://ibrahimelgibran.com">iegcode </a>
+  <style>
+    footer {
+      color: #fff;
+     margin-bottom: -70px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      font-size: 15px;
+      position: fixed;
+      padding: 20px 0;
+      font-weight: bold;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768spx) {
+      footer {
+        margin-left: 0; /* Reset margin-left */
+      }
+    }
+  </style>
+</footer>

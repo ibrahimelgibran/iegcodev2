@@ -38,6 +38,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <?php if (!empty($invoice)) : ?>
                         <?php foreach ($invoice as $row) : ?>
                             <tr class="intro-x">
                                 <td class="w-10">
@@ -76,6 +77,7 @@
                             </td>
                         </tr>
                     <?php endforeach; ?>
+                    <?php endif; ?>
                 </tbody>
             </table>
         </div>

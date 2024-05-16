@@ -1,11 +1,11 @@
-<h2><center>Data Penjualan</center></h2>
+<h2><center>Data Transaction</center></h2>
 <hr/>
 <table border="1" width="100%" style="text-align:center;">
 	<tr>
 		<th>No</th>
 		<th>Nama Product</th>
 		<th>Harga</th>
-		<th>Pcs</th>
+		<th>Qty</th>
 		<th>Total</th>
 	</tr>
 	<?php 

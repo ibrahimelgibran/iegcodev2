@@ -28,6 +28,56 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END: Head -->
 
 <body class="main">
+       <!-- button chackbok -->
+       <button onclick="window.location.href='https://wa.me/6285876076005?text=Hallo%20IEGCODE...'">
+			<img
+				src="./asset/chat.png"
+				alt="Icon Pesan"
+				width="24"
+				height="24"
+			/>
+            Live Chat
+		</button>
+		<style>
+			 button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            color: #000;
+            background-color: #e0e8ef;
+            border-style: solid;
+            border-width: 2px;
+            z-index: 10;
+            border-color: rgba(255, 255, 255, 0.333);
+            border-radius: 40px;
+            padding: 16px 24px 16px 28px;
+            transition: 0.2s;
+            box-shadow: -4px -2px 16px 0px #0E46A3,
+                        4px 2px 16px 0px rgb(95 157 231 / 48%);
+            position: fixed; /* Tetapkan posisi tetap */
+            bottom: 20px; /* Atur jarak dari bagian bawah halaman */
+            right: 20px; /* Atur jarak dari bagian kanan halaman */
+        }
+
+        button:hover {
+            color: #516d91;
+            background-color: #e5edf5;
+            box-shadow: -2px -1px 8px 0px #ffffff,
+                        2px 1px 8px 0px rgb(95 157 231 / 48%);
+        }
+
+        button:active {
+            box-shadow: none;
+        }
+		</style>
+		<!-- end button chackbok -->
+
     <!-- BEGIN: Mobile Menu -->
     <div class="mobile-menu md:hidden">
         <div class="mobile-menu-bar">
@@ -214,3 +264,28 @@ License: You must have a valid license purchased only from themeforest(the above
                 </ul>
             </nav>
             <!-- END: Side Menu -->
+
+            <footer>
+  made with ❤️ by
+  <a href="http://ibrahimelgibran.com">iegcode </a>
+  <style>
+    footer {
+      color: #fff;
+     margin-bottom: -70px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      font-size: 15px;
+      position: fixed;
+      padding: 20px 0;
+      font-weight: bold;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768spx) {
+      footer {
+        margin-left: 0; /* Reset margin-left */
+      }
+    }
+  </style>
+</footer>
