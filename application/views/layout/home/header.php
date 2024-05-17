@@ -92,8 +92,7 @@ License: You must have a valid license purchased only from themeforest(the above
                <li>
                         <a href="<?= base_url('home') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
-                            <div class="side-menu__title">
-                                Home
+                            <div class="side-menu__title" style="margin-left: 10px;"> Home
                                 <div class="side-menu__sub-icon transform rotate-180"> </div>
                             </div>
                         </a>
@@ -101,19 +100,19 @@ License: You must have a valid license purchased only from themeforest(the above
                     <li>
                         <a href="<?= base_url('categories/project') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="file-code"></i> </div>
-                            <div class="side-menu__title"> Source Code </div>
+                            <div class="side-menu__title" style="margin-left: 10px;"> Source Code </div>
                         </a>
                     </li>
                     <li>
                         <a href="<?= base_url('categories/jasa') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="globe"></i> </div>
-                            <div class="side-menu__title"> Pembuatan Website </div>
+                            <div class="side-menu__title" style="margin-left: 10px;"> Pembuatan Website </div>
                         </a>
                     </li>
                     <li>
                         <a href="<?= base_url('categories/shirt') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
-                            <div class="side-menu__title">  T-Shirt
+                            <div class="side-menu__title" style="margin-left: 10px;">  T-Shirt
                                 <div class="side-menu__sub-icon transform rotate-180"> </div>
                             </div>
                         </a>
@@ -121,7 +120,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <li>
                         <a href="<?= base_url('categories/jacket') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
-                            <div class="side-menu__title">
+                            <div class="side-menu__title" style="margin-left: 10px;">
                                 Jacket
                                 <div class="side-menu__sub-icon "></div>
                             </div>
@@ -130,31 +129,29 @@ License: You must have a valid license purchased only from themeforest(the above
                     <li>
                         <a href="<?= base_url('categories/shoes') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
-                            <div class="side-menu__title"> Shoes </div>
+                            <div class="side-menu__title" style="margin-left: 10px;"> Shoes </div>
                         </a>
                     </li>
                     <li>
                         <a href="<?= base_url('categories/elektronik') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="monitor"></i> </div>
-                            <div class="side-menu__title"> Electronic </div>
+                            <div class="side-menu__title" style="margin-left: 10px;"> Electronic </div>
                         </a>
                     </li>
 
                     <li>
                         <a href="<?= base_url('categories/kids') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="bot"></i> </div>
-                            <div class="side-menu__title"> Kids & Baby </div>
+                            <div class="side-menu__title" style="margin-left: 10px;"> Kids & Baby </div>
                         </a>
                     </li>
 
                     <li>
                         <a href="<?= base_url('categories/fashion') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="heart"></i> </div>
-                            <div class="side-menu__title"> Fashion & Make Up </div>
+                            <div class="side-menu__title" style="margin-left: 10px;"> Fashion & Make Up </div>
                         </a>
                     </li>
-                
-                
             </ul>
         </div>
     </div>
@@ -172,7 +169,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <nav aria-label="breadcrumb" class="-intro-x h-full mr-auto">
                 <ol class="breadcrumb breadcrumb-light">
                     <li class="breadcrumb-item"><a href=""><?= $title ?></a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="<?= site_url('admin/dashboard') ?>">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="<?= site_url('admin/dashboard') ?>"></a>Dashboard</li>
                 </ol>
             </nav>
             <!-- END: Breadcrumb -->

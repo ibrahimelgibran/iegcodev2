@@ -45,7 +45,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <li>
                     <a href="<?= base_url('dashboard') ?>" class="menu">
                         <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
-                        <div class="side-menu__title">
+                        <div class="side-menu__title" style="margin-left: 10px;">
                             Dashboard
                             <div class="side-menu__sub-icon transform rotate-180"> </div>
                         </div>
@@ -54,7 +54,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <li>
                     <a href="<?= base_url('order') ?>" class="menu">
                         <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
-                        <div class="side-menu__title">
+                        <div class="side-menu__title" style="margin-left: 10px;">
                             Order History
                             <div class="side-menu__sub-icon "></div>
                         </div>
@@ -63,27 +63,27 @@ License: You must have a valid license purchased only from themeforest(the above
                 <li>
                     <a href="<?= base_url('bill') ?>" class="menu">
                         <div class="side-menu__icon"> <i data-lucide="file-text"></i> </div>
-                        <div class="side-menu__title"> Billing History </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Billing History </div>
                     </a>
                 </li>
 
                 <li>
                     <a href="<?= base_url('pay') ?>" class="menu">
                         <div class="side-menu__icon"> <i data-lucide="file-text"></i> </div>
-                        <div class="side-menu__title"> Invoice History </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Invoice History </div>
                     </a>
                 </li>
                 <li class="side-nav__devider my-6"></li>
                 <li>
                     <a href="<?= base_url('profile') ?>" class="menu">
                         <div class="side-menu__icon"> <i data-lucide="settings"></i> </div>
-                        <div class="side-menu__title"> Settings </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Settings </div>
                     </a>
                 </li>
                 <li>
                     <a href="<?= base_url('change_password') ?>" class="menu">
                         <div class="side-menu__icon"> <i data-lucide="lock"></i> </div>
-                        <div class="side-menu__title"> Change Password </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Change Password </div>
                     </a>
                 </li>
 

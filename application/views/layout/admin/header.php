@@ -49,7 +49,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <li>
                         <a href="<?= site_url('admin/dashboard') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
-                            <div class="side-menu__title">
+                            <div class="side-menu__title" style="margin-left: 10px;">
                                 Dashboard
                                 <div class="side-menu__sub-icon transform rotate-180"> </div>
                             </div>
@@ -58,7 +58,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <li>
                         <a href="<?= base_url('admin/product') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
-                            <div class="side-menu__title">
+                            <div class="side-menu__title" style="margin-left: 10px;">
                                 Products
                                 <div class="side-menu__sub-icon "></div>
                             </div>
@@ -67,7 +67,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <li>
                         <a href="<?= base_url('admin/invoice') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="file-text"></i> </div>
-                            <div class="side-menu__title"> Invoice </div>
+                            <div class="side-menu__title" style="margin-left: 10px;"> Invoice </div>
                         </a>
                     </li>
             </ul>
