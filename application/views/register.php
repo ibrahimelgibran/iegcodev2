@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-Template Name: Icewall - HTML Admin Dashboard Template
-Author: Left4code
+Template Name: iegcode - HTML Admin Dashboard Template
+Author: iegcode
 Website: http://www.iegcode.my.id/
 Contact: iegcodeid@gmail.com
 Purchase: https://themeforest.net/user/left4code/portfolio
