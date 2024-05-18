@@ -12,7 +12,10 @@ class Model_kategori extends CI_Model
 	{
 		return $this->db->get_where('product', array('kategori' => 'T-Shirt'));
 	}
-
+	public function ticket()
+	{
+		return $this->db->get_where('product', array('kategori' => 'E-Ticket'));
+	}
 	public function shoes()
 	{
 		return $this->db->get_where('product', array('kategori' => 'Shoes'));

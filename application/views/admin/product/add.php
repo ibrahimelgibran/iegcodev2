@@ -79,6 +79,7 @@
                                         <option hidden>-- Select Categories --</option>
                                         <option value="Kids & Baby">Source Code</option>
                                         <option value="T-Shirt">T-Shirt</option>
+                                        <option value="E-Ticket">E-Ticket </option>
                                         <option value="Jacket">Jacket</option>
                                         <option value="Shoes">Shoes</option>
                                         <option value="Electronic">Electronic</option>

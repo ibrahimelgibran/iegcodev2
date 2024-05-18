@@ -54,6 +54,10 @@
                                             <div class="flex items-center whitespace-nowrap text-success text-uppercase"> <i data-lucide="package" class="w-4 h-4 mr-2"></i> <b>GO-SEND</b> </div>
                                             <?php } else if ($row->ekspedisi == "GRAB-SEND"){ ?>
                                             <div class="flex items-center whitespace-nowrap text-success text-uppercase"> <i data-lucide="package" class="w-4 h-4 mr-2"></i> <b>GRAB-SEND</b> </div>
+                                            <?php } else if ($row->ekspedisi == "SEND-EMAIL"){ ?>
+                                            <div class="flex items-center whitespace-nowrap text-success text-uppercase"> <i data-lucide="package" class="w-4 h-4 mr-2"></i> <b>SEND-EMAIL</b> </div>
+                                            <?php } else if ($row->ekspedisi == "SEND-WA"){ ?>
+                                            <div class="flex items-center whitespace-nowrap text-success text-uppercase"> <i data-lucide="package" class="w-4 h-4 mr-2"></i> <b>SEND-WA</b> </div>
                                             <?php } ?>
                                         </td>
                                         <td>

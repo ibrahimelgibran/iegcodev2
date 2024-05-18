@@ -22,6 +22,15 @@ class Categories extends CI_Controller
 		$this->load->view('layout/home/footer');
 	}
 
+	public function ticket()
+	{
+		$data['title'] = 'Ticket Categories';
+		$data['ticket'] = $this->model_kategori->ticket()->result();
+		$this->load->view('layout/home/header', $data);
+		$this->load->view('ticket', $data);
+		$this->load->view('layout/home/footer');
+	}
+
 	public function shoes()
 	{
 		$data['title'] = 'Shoes Categories';
