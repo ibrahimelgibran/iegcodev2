@@ -30,16 +30,16 @@
                                                 <label for="update-profile-form-2" class="form-label">Categories</label>
                                                 <select id="category" name="kategori" class="form-select">
                                                     <option selected hidden value="<?= $row->kategori ?>"><?= $row->kategori ?></option>
-                                                    <option value="T-Shirt">T-Shirt</option>
+                                                    <option value="Project">Source Code</option>
+                                                    <option value="Jasa">Pembuatan Website</option>
                                                     <option value="UI/UX">UI/UX</option>
                                                     <option value="E-Ticket">E-Ticket</option>
                                                     <option value="Jacket">Jacket</option>
+                                                    <option value="T-Shirt">T-Shirt</option>
                                                     <option value="Shoes">Shoes</option>
                                                     <option value="Electronic">Electronic</option>
                                                     <option value="Kids &amp; Baby">Kids &amp; Baby</option>
                                                     <option value="Fashion &amp; Make Up">Fashion &amp; Make Up</option>
-                                                    <option value="Project">Source Code</option>
-                                                    <option value="Jasa">Pembuatan Website</option>
                                                 </select>
                                             </div>
                                         </div>

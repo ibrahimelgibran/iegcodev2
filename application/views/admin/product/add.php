@@ -77,16 +77,16 @@
                                 <div class="w-full mt-3 xl:mt-0 flex-1">
                                     <select id="category" name="kategori" class="form-select">
                                         <option hidden>-- Select Categories --</option>
-                                        <option value="Kids & Baby">Source Code</option>
-                                        <option value="T-Shirt">T-Shirt</option>
+                                        <option value="Project">Source Code </option>
+                                        <option value="Jasa">Pembuatan Website </option>
                                         <option value="UI/UX">UI/UX </option>
                                         <option value="E-Ticket">E-Ticket </option>
+                                        <option value="T-Shirt">T-Shirt</option>
+                                        <option value="Kids & Baby">Kids & Baby</option>
                                         <option value="Jacket">Jacket</option>
                                         <option value="Shoes">Shoes</option>
                                         <option value="Electronic">Electronic</option>
                                         <option value="Fashion & Make Up">Fashion &amp; Make Up</option>
-                                        <option value="Project">Source Code </option>
-                                        <option value="Jasa">Pembuatan Website </option>
                                     </select>
                                 </div>
                             </div>
