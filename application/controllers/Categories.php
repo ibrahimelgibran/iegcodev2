@@ -22,6 +22,15 @@ class Categories extends CI_Controller
 		$this->load->view('layout/home/footer');
 	}
 
+	public function uiux()
+	{
+		$data['title'] = 'UI/UX Categories';
+		$data['uiux'] = $this->model_kategori->uiux()->result();
+		$this->load->view('layout/home/header', $data);
+		$this->load->view('uiux', $data);
+		$this->load->view('layout/home/footer');
+	}
+
 	public function ticket()
 	{
 		$data['title'] = 'Ticket Categories';

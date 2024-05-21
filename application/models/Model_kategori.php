@@ -16,6 +16,10 @@ class Model_kategori extends CI_Model
 	{
 		return $this->db->get_where('product', array('kategori' => 'E-Ticket'));
 	}
+	public function uiux()
+	{
+		return $this->db->get_where('product', array('kategori' => 'UI/UX'));
+	}
 	public function shoes()
 	{
 		return $this->db->get_where('product', array('kategori' => 'Shoes'));

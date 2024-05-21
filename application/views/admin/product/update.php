@@ -31,6 +31,7 @@
                                                 <select id="category" name="kategori" class="form-select">
                                                     <option selected hidden value="<?= $row->kategori ?>"><?= $row->kategori ?></option>
                                                     <option value="T-Shirt">T-Shirt</option>
+                                                    <option value="UI/UX">UI/UX</option>
                                                     <option value="E-Ticket">E-Ticket</option>
                                                     <option value="Jacket">Jacket</option>
                                                     <option value="Shoes">Shoes</option>

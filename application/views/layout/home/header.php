@@ -110,6 +110,12 @@ License: You must have a valid license purchased only from themeforest(the above
                         </a>
                     </li>
                     <li>
+                        <a href="<?= base_url('categories/uiux') ?>" class="menu">
+                            <div class="side-menu__icon"> <i data-lucide="figma"></i> </div>
+                            <div class="side-menu__title" style="margin-left: 10px;"> UI/UX </div>
+                        </a>
+                    </li>
+                    <li>
                         <a href="<?= base_url('categories/ticket') ?>" class="menu">
                             <div class="side-menu__icon"> <i data-lucide="ticket"></i> </div>
                             <div class="side-menu__title" style="margin-left: 10px;"> E-Ticket </div>
@@ -217,6 +223,12 @@ License: You must have a valid license purchased only from themeforest(the above
                         <a href="<?= base_url('categories/jasa') ?>" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="globe"></i> </div>
                             <div class="side-menu__title"> Pembuatan Website </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('categories/uiux') ?>" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="figma"></i> </div>
+                            <div class="side-menu__title"> UI/UX </div>
                         </a>
                     </li>
                     <li>
