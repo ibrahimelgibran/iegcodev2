@@ -30,6 +30,14 @@ class Categories extends CI_Controller
 		$this->load->view('uiux', $data);
 		$this->load->view('layout/home/footer');
 	}
+	public function logo()
+	{
+		$data['title'] = 'Logo Categories';
+		$data['logo'] = $this->model_kategori->logo()->result();
+		$this->load->view('layout/home/header', $data);
+		$this->load->view('logo', $data);
+		$this->load->view('layout/home/footer');
+	}
 
 	public function ticket()
 	{
@@ -89,6 +97,39 @@ class Categories extends CI_Controller
 		$data['jasa'] = $this->model_kategori->jasa()->result();
 		$this->load->view('layout/home/header', $data);
 		$this->load->view('jasa', $data);
+		$this->load->view('layout/home/footer');
+	}
+
+	public function banner()
+	{
+		$data['title'] = 'Banner Categories';
+		$data['banner'] = $this->model_kategori->banner()->result();
+		$this->load->view('layout/home/header', $data);
+		$this->load->view('banner', $data);
+		$this->load->view('layout/home/footer');
+	}
+	public function pulsa()
+	{
+		$data['title'] = 'Pulsa Categories';
+		$data['pulsa'] = $this->model_kategori->pulsa()->result();
+		$this->load->view('layout/home/header', $data);
+		$this->load->view('pulsa', $data);
+		$this->load->view('layout/home/footer');
+	}
+	public function topup()
+	{
+		$data['title'] = 'Topup Game Categories';
+		$data['topup'] = $this->model_kategori->topup()->result();
+		$this->load->view('layout/home/header', $data);
+		$this->load->view('topup', $data);
+		$this->load->view('layout/home/footer');
+	}
+	public function suntik()
+	{
+		$data['title'] = 'Suntik Followers Categories';
+		$data['suntik'] = $this->model_kategori->suntik()->result();
+		$this->load->view('layout/home/header', $data);
+		$this->load->view('suntik', $data);
 		$this->load->view('layout/home/footer');
 	}
 }

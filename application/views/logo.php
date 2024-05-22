@@ -15,7 +15,7 @@
         </div>
 
         <!-- BEGIN: Users Layout -->
-        <?php foreach ($uiux as $row) : ?>
+        <?php foreach ($logo as $row) : ?>
             <div class="intro-y col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
                 <div class="box">
                     <div class="p-5">

@@ -20,6 +20,10 @@ class Model_kategori extends CI_Model
 	{
 		return $this->db->get_where('product', array('kategori' => 'UI/UX'));
 	}
+	public function logo()
+	{
+		return $this->db->get_where('product', array('kategori' => 'Logo'));
+	}
 	public function shoes()
 	{
 		return $this->db->get_where('product', array('kategori' => 'Shoes'));
@@ -47,5 +51,23 @@ class Model_kategori extends CI_Model
 	public function jasa()
 	{
 		return $this->db->get_where('product', array('kategori' => 'Jasa'));
+	}
+
+	public function banner()
+	{
+		return $this->db->get_where('product', array('kategori' => 'Banner'));
+	}
+
+	public function pulsa()
+	{
+		return $this->db->get_where('product', array('kategori' => 'Pulsa'));
+	}
+	public function topup()
+	{
+		return $this->db->get_where('product', array('kategori' => 'Topup Game'));
+	}
+	public function suntik()
+	{
+		return $this->db->get_where('product', array('kategori' => 'Suntik Followers'));
 	}
 }

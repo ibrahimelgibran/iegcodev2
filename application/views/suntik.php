@@ -13,9 +13,8 @@
                 </div>
             </div>
         </div>
-
         <!-- BEGIN: Users Layout -->
-        <?php foreach ($uiux as $row) : ?>
+        <?php foreach ($suntik as $row) : ?>
             <div class="intro-y col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
                 <div class="box">
                     <div class="p-5">
@@ -69,11 +68,6 @@
             </select>
         </div> -->
         <!-- END: Pagination -->
-
-
-        <!-- BISA ISI CONTENT KOSONG -->
-        <!-- <h1>Oops, Kosong!</h1> -->
-        <!-- AKHHIRANNYA -->
     </div>
 </div>
 
@@ -101,4 +95,3 @@
     </div>
 </div>
                     <!-- END: Delete Confirmation Modal -->
-                    

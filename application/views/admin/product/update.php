@@ -33,6 +33,11 @@
                                                     <option value="Project">Source Code</option>
                                                     <option value="Jasa">Pembuatan Website</option>
                                                     <option value="UI/UX">UI/UX</option>
+                                                    <option value="Pulsa">Pulsa </option>
+                                                    <option value="Topup Game">Topup Game </option>
+                                                    <option value="Suntik Followers">Suntik Followers </option>
+                                                    <option value="Logo">Logo </option>
+                                                    <option value="Banner">Banner </option>
                                                     <option value="E-Ticket">E-Ticket</option>
                                                     <option value="Jacket">Jacket</option>
                                                     <option value="T-Shirt">T-Shirt</option>

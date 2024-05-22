@@ -28,23 +28,18 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END: Head -->
 
 <body class="main">
-       <!-- button chackbok -->
-       <button onclick="window.location.href='https://wa.me/6285876076005?text=Hallo%20IEGCODE...'">
-			<img
-				src="https://cdn-icons-png.freepik.com/256/724/724715.png?semt=ais_hybrid"
-				alt="Icon Pesan"
-				width="24"
-				height="24"
-			/>
-            Live Chat
-		</button>
-		<style>
-			 button {
+    <!-- button chackbok -->
+    <button onclick="window.location.href='https://wa.me/6285876076005?text=Hallo%20IEGCODE...'">
+        <img src="https://cdn-icons-png.freepik.com/256/724/724715.png?semt=ais_hybrid" alt="Icon Pesan" width="24" height="24" />
+        Live Chat
+    </button>
+    <style>
+        button {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 13px;
             font-weight: 500;
             text-transform: uppercase;
@@ -59,24 +54,27 @@ License: You must have a valid license purchased only from themeforest(the above
             padding: 16px 24px 16px 28px;
             transition: 0.2s;
             box-shadow: -4px -2px 16px 0px #0E46A3,
-                        4px 2px 16px 0px rgb(95 157 231 / 48%);
-            position: fixed; /* Tetapkan posisi tetap */
-            bottom: 20px; /* Atur jarak dari bagian bawah halaman */
-            right: 20px; /* Atur jarak dari bagian kanan halaman */
+                4px 2px 16px 0px rgb(95 157 231 / 48%);
+            position: fixed;
+            /* Tetapkan posisi tetap */
+            bottom: 20px;
+            /* Atur jarak dari bagian bawah halaman */
+            right: 20px;
+            /* Atur jarak dari bagian kanan halaman */
         }
 
         button:hover {
             color: #516d91;
             background-color: #e5edf5;
             box-shadow: -2px -1px 8px 0px #ffffff,
-                        2px 1px 8px 0px rgb(95 157 231 / 48%);
+                2px 1px 8px 0px rgb(95 157 231 / 48%);
         }
 
         button:active {
             box-shadow: none;
         }
-		</style>
-		<!-- end button chackbok -->
+    </style>
+    <!-- end button chackbok -->
 
     <!-- BEGIN: Mobile Menu -->
     <div class="mobile-menu md:hidden">
@@ -89,81 +87,127 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="scrollable">
             <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="x-circle" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
             <ul class="scrollable__content py-2">
-               <li>
-                        <a href="<?= base_url('home') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;"> Home
-                                <div class="side-menu__sub-icon transform rotate-180"> </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('categories/project') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="file-code"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;"> Source Code </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('categories/jasa') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="globe"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;"> Pembuatan Website </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('categories/uiux') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="figma"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;"> UI/UX </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('categories/ticket') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="ticket"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;"> E-Ticket </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('categories/shirt') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;">  T-Shirt
-                                <div class="side-menu__sub-icon transform rotate-180"> </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('categories/jacket') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;">
-                                Jacket
-                                <div class="side-menu__sub-icon "></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('categories/shoes') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;"> Shoes </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('categories/elektronik') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="monitor"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;"> Electronic </div>
-                        </a>
-                    </li>
+                <li>
+                    <a href="<?= base_url('home') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Home
+                            <div class="side-menu__sub-icon transform rotate-180"> </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('categories/project') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="file-code"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Source Code </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('categories/jasa') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="globe"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Pembuatan Website </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('categories/uiux') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="figma"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> UI/UX </div>
+                    </a>
+                <li>
+                <li>
+                    <a href="#" class="menu">
+                        <div class="side-menu__icon"><i data-lucide="smile"></i></div>
+                        <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">PPOB & SMM</div>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="<?= base_url('categories/pulsa') ?>" class="menu">
+                                <div class="side-menu__icon"><i data-lucide="smartphone"></i></div>
+                                <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Pulsa</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= base_url('categories/topup') ?>" class="menu">
+                                <div class="side-menu__icon"><i data-lucide="gem"></i></div>
+                                <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Topup Game</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= base_url('categories/suntik') ?>" class="menu">
+                                <div class="side-menu__icon"><i data-lucide="pipette"></i></div>
+                                <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Suntik Followers IG, YouTube, Tiktok</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="menu">
+                        <div class="side-menu__icon"><i data-lucide="bot"></i></div>
+                        <div class="side-menu__title" style="margin-left: 10px; margin-top:10px"> Graphic Design</div>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="<?= base_url('categories/logo') ?>" class="menu">
+                                <div class="side-menu__icon"><i data-lucide="contrast"></i></div>
+                                <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Logo</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= base_url('categories/banner') ?>" class="menu">
+                                <div class="side-menu__icon"><i data-lucide="trello"></i></div>
+                                <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Banner</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="<?= base_url('categories/ticket') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="ticket"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> E-Ticket </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('categories/shirt') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> T-Shirt
+                            <div class="side-menu__sub-icon transform rotate-180"> </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('categories/jacket') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;">
+                            Jacket
+                            <div class="side-menu__sub-icon "></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('categories/shoes') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Shoes </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('categories/elektronik') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="monitor"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Electronic </div>
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="<?= base_url('categories/kids') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="bot"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;"> Kids & Baby </div>
-                        </a>
-                    </li>
+                <li>
+                    <a href="<?= base_url('categories/kids') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="dribbble"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Kids & Baby </div>
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="<?= base_url('categories/fashion') ?>" class="menu">
-                            <div class="side-menu__icon"> <i data-lucide="heart"></i> </div>
-                            <div class="side-menu__title" style="margin-left: 10px;"> Fashion & Make Up </div>
-                        </a>
-                    </li>
+                <li>
+                    <a href="<?= base_url('categories/fashion') ?>" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="heart"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Fashion & Make Up </div>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -188,9 +232,9 @@ License: You must have a valid license purchased only from themeforest(the above
 
             <!-- BEGIN: Notifications -->
             <div class="intro-x dropdown mr-4 sm:mr-6">
-               
-                <a href="<?= site_url('welcome')?>" class="dropdown-toggle notification notification--bullet cursor-pointer"><i data-lucide="lock" class="notification__icon dark:text-slate-500"></i></a>
-            
+
+                <a href="<?= site_url('welcome') ?>" class="dropdown-toggle notification notification--bullet cursor-pointer"><i data-lucide="lock" class="notification__icon dark:text-slate-500"></i></a>
+
             </div>
             <!-- END: Notifications -->
         </div>
@@ -231,6 +275,94 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="side-menu__title"> UI/UX </div>
                         </a>
                     </li>
+                    <li class="parent-menu">
+                        <a href="#" class="side-menu">
+                            <div class="side-menu__icon"><i data-lucide="smile"></i></div>
+                            <div class="side-menu__title">PPOB & SMM</div>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="<?= base_url('categories/pulsa') ?>" class="side-menu">
+                                    <div class="side-menu__icon"><i data-lucide="smartphone"></i></div>
+                                    <div class="side-menu__title">Pulsa</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?= base_url('categories/topup') ?>" class="side-menu">
+                                    <div class="side-menu__icon"><i data-lucide="gem"></i></div>
+                                    <div class="side-menu__title">Topup Game</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?= base_url('categories/suntik') ?>" class="side-menu">
+                                    <div class="side-menu__icon"><i data-lucide="pipette"></i></div>
+                                    <div class="side-menu__title">Suntik Followers IG, YouTube, Tiktok</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <style>
+                            /* Sembunyikan submenu secara default */
+                            .sub-menu {
+                                display: none;
+                            }
+                        </style>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // Pilih elemen yang akan diklik (item menu "Graphic Design")
+                                var parentMenuItem = document.querySelector('.parent-menu');
+
+                                // Pilih submenu dari item menu "Graphic Design"
+                                var submenu = parentMenuItem.querySelector('.sub-menu');
+
+                                // Tambahkan event listener untuk menangani klik pada item menu "Graphic Design"
+                                parentMenuItem.addEventListener('click', function(event) {
+                                    // Toggle tampilan submenu (dari tersembunyi menjadi terlihat, dan sebaliknya)
+                                    submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+                                });
+                            });
+                        </script>
+                    </li>
+                    <li class="parent-menu">
+                        <a href="#" class="side-menu">
+                            <div class="side-menu__icon"><i data-lucide="bot"></i></div>
+                            <div class="side-menu__title">Graphic Design</div>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="<?= base_url('categories/logo') ?>" class="side-menu">
+                                    <div class="side-menu__icon"><i data-lucide="contrast"></i></div>
+                                    <div class="side-menu__title">Logo</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?= base_url('categories/banner') ?>" class="side-menu">
+                                    <div class="side-menu__icon"><i data-lucide="trello"></i></div>
+                                    <div class="side-menu__title">Banner</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <style>
+                            /* Sembunyikan submenu secara default */
+                            .sub-menu {
+                                display: none;
+                            }
+                        </style>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // Pilih elemen yang akan diklik (item menu "Graphic Design")
+                                var parentMenuItem = document.querySelector('.parent-menu');
+
+                                // Pilih submenu dari item menu "Graphic Design"
+                                var submenu = parentMenuItem.querySelector('.sub-menu');
+
+                                // Tambahkan event listener untuk menangani klik pada item menu "Graphic Design"
+                                parentMenuItem.addEventListener('click', function(event) {
+                                    // Toggle tampilan submenu (dari tersembunyi menjadi terlihat, dan sebaliknya)
+                                    submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+                                });
+                            });
+                        </script>
+                    </li>
                     <li>
                         <a href="<?= base_url('categories/ticket') ?>" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="ticket"></i> </div>
@@ -240,14 +372,14 @@ License: You must have a valid license purchased only from themeforest(the above
                     <li>
                         <a href="<?= base_url('categories/shirt') ?>" class="side-menu side-menu">
                             <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
-                            <div class="side-menu__title">  T-Shirt
+                            <div class="side-menu__title"> T-Shirt
                                 <div class="side-menu__sub-icon transform rotate-180"> </div>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href="<?= base_url('categories/jacket') ?>" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
+                            <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
                             <div class="side-menu__title">
                                 Jacket
                                 <div class="side-menu__sub-icon "></div>
@@ -269,7 +401,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                     <li>
                         <a href="<?= base_url('categories/kids') ?>" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="bot"></i> </div>
+                            <div class="side-menu__icon"> <i data-lucide="dribbble"></i> </div>
                             <div class="side-menu__title"> Kids & Baby </div>
                         </a>
                     </li>
@@ -287,26 +419,27 @@ License: You must have a valid license purchased only from themeforest(the above
             <!-- END: Side Menu -->
 
             <footer>
-  made with ❤️ by
-  <a href="http://ibrahimelgibran.com">iegcode </a>
-  <style>
-    footer {
-      color: #fff;
-     margin-bottom: -70px;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      text-align: center;
-      font-size: 15px;
-      position: fixed;
-      padding: 20px 0;
-      font-weight: bold;
-      bottom: 0;
-      width: 100%;
-    }
+                made with ❤️ by
+                <a href="http://ibrahimelgibran.com">iegcode </a>
+                <style>
+                    footer {
+                        color: #fff;
+                        margin-bottom: -70px;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        text-align: center;
+                        font-size: 15px;
+                        position: fixed;
+                        padding: 20px 0;
+                        font-weight: bold;
+                        bottom: 0;
+                        width: 100%;
+                    }
 
-    @media (max-width: 768spx) {
-      footer {
-        margin-left: 0; /* Reset margin-left */
-      }
-    }
-  </style>
-</footer>
+                    @media (max-width: 768spx) {
+                        footer {
+                            margin-left: 0;
+                            /* Reset margin-left */
+                        }
+                    }
+                </style>
+            </footer>
