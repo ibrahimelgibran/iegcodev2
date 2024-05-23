@@ -17,7 +17,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Apa itu IEGCODE? yaitu sebuah platform e-commerce yang menyediakan layanan kebutuhan Anda. ada beberapa jenis produk pada e-commerce IEGCODE.">
     <meta name="author" content="IEGCODE">
-    <meta name="keywords" content="Admission, Education, IT, Programmer, Programming, Coding, Source Code, E-Commerce, Services">
+    <meta name="keywords" content="Ieg, Iegcode, iegcode, IEGCODE, Admission, Education, IT, Programmer, Programming, Coding, Source Code, E-Commerce, Services">
     <meta itemprop="name" content="IEGCODE - E-Commerce" />
     <meta name="url" content="https://www.iegcode.my.id">
     <meta name="language" content="Indonesia, English">
