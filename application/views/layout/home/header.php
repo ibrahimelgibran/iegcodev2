@@ -304,6 +304,21 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="side-menu__title"> UI/UX </div>
                         </a>
                     </li>
+                    <script>
+                          document.addEventListener('DOMContentLoaded', function() {
+                                // Pilih elemen yang akan diklik (item menu "Graphic Design")
+                                var parentMenuItem = document.querySelector('.parent-menu');
+
+                                // Pilih submenu dari item menu "Graphic Design"
+                                var submenu = parentMenuItem.querySelector('.sub-menu');
+
+                                // Tambahkan event listener untuk menangani klik pada item menu "Graphic Design"
+                                parentMenuItem.addEventListener('click', function(event) {
+                                    // Toggle tampilan submenu (dari tersembunyi menjadi terlihat, dan sebaliknya)
+                                    submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+                                });
+                            });
+                    </script>
                     <li class="parent-menu">
                         <a href="#" class="side-menu">
                             <div class="side-menu__icon"><i data-lucide="smile"></i></div>
