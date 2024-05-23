@@ -15,9 +15,28 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta charset="utf-8">
     <link href="<?= site_url('asset') ?>/admin/dist/images/logo.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Icewall admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Icewall Admin Template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="LEFT4CODE">
+    <meta name="description" content="Apa itu IEGCODE? yaitu sebuah platform e-commerce yang menyediakan layanan kebutuhan Anda. ada beberapa jenis produk pada e-commerce IEGCODE.">
+    <meta name="author" content="IEGCODE">
+    <meta name="keywords" content="Admission, Education, IT, Programmer, Programming, Coding, Source Code, E-Commerce, Services">
+    <meta itemprop="name" content="IEGCODE - E-Commerce" />
+    <meta name="url" content="https://www.iegcode.my.id">
+    <meta name="language" content="Indonesia, English">
+	<meta name="robots" content="index,follow" />
+	<meta name="revised" content="Sunday, Des, 24th, 2024, 5:15 pm" />
+    <meta name="designer" content="iegocde, iegcodeid@gmail.com">
+	<meta name="reply-to" content="info@smkmuhammadiyahgamping.sch.id">
+	<meta name="owner" content="smkmuhammadiyahgamping">
+    <meta http-equiv="imagetoolbar" content="no" />
+	<meta name="revisit-after" content="7" />
+	<meta name="webcrawlers" content="all" />
+	<meta name="rating" content="general" />
+	<meta name="spiders" content="all" />
+	<meta name="identifier-URL" content="https://www.iegcode.my.id">
+    <meta name="category" content="Admission, Education, IT, Programmer, Programming, Coding, Source Code, E-Commerce, Services">
+	<meta name="coverage" content="Worldwide">
+	<meta name="distribution" content="Global">
+	<meta name="rating" content="General">
+	<meta name="revisit-after" content="7 days">
     <title><?= $title ?> | IEG</title>
     <!-- BEGIN: CSS Assets-->
     <link rel="stylesheet" href="<?= site_url('asset') ?>/admin/dist/css/app.css" />
