@@ -26,51 +26,51 @@ class Profile extends CI_Controller
     }
 
     public function update()
-{
-    $id = $this->input->post('id_user');
-    $nama_user = $this->input->post('nama_user');
-    $email = $this->input->post('email');
+    {
+        $id = $this->input->post('id_user');
+        $nama_user = $this->input->post('nama_user');
+        $email = $this->input->post('email');
 
-    // Upload gambar profil jika ada yang diunggah
-    if (!empty($_FILES['profile_photo']['name'])) {
-        $config['upload_path'] = './uploads/profiles/';
-        $config['allowed_types'] = 'jpg|jpeg|png';
-        $config['max_size'] = 2048; // 2MB
-        $config['file_name'] = 'profile_' . $id;
+        // Upload gambar profil jika ada yang diunggah
+        if (!empty($_FILES['profile_photo']['name'])) {
+            $config['upload_path'] = './uploads/profiles/';
+            $config['allowed_types'] = 'jpg|jpeg|png';
+            $config['max_size'] = 2048; // 2MB
+            $config['file_name'] = 'profile_' . $id;
 
-        $this->load->library('upload', $config);
+            $this->load->library('upload', $config);
 
-        if ($this->upload->do_upload('profile_photo')) {
-            $upload_data = $this->upload->data();
-            $avatar = $upload_data['file_name'];
+            if ($this->upload->do_upload('profile_photo')) {
+                $upload_data = $this->upload->data();
+                $avatar = $upload_data['file_name'];
 
-            // Hapus foto lama jika ada
-            // Lakukan operasi penghapusan foto lama di sini jika diperlukan
+                // Hapus foto lama jika ada
+                // Lakukan operasi penghapusan foto lama di sini jika diperlukan
 
-            // Update data ke database
-            $data['avatar'] = $avatar;
+                // Update data ke database
+                $data['avatar'] = $avatar;
 
-            // Simpan nama file avatar baru ke dalam sesi pengguna
-            $this->session->set_userdata('avatar', $avatar);
-        } else {
-            $error = $this->upload->display_errors();
-            echo $error; // Tampilkan pesan error
-            return;
+                // Simpan nama file avatar baru ke dalam sesi pengguna
+                $this->session->set_userdata('avatar', $avatar);
+            } else {
+                $error = $this->upload->display_errors();
+                echo $error; // Tampilkan pesan error
+                return;
+            }
         }
+
+        // Update data nama dan email
+        $data['nama_user'] = $nama_user;
+        $data['email'] = $email;
+
+        $where = array('id_user' => $id);
+
+        $this->db->update('user', $data, $where);
+
+        // Perbarui sesi dengan data baru
+        $this->session->set_userdata('nama_user', $nama_user);
+        $this->session->set_userdata('email', $email);
+
+        redirect('profile'); // Redirect kembali ke halaman profil
     }
-
-    // Update data nama dan email
-    $data['nama_user'] = $nama_user;
-    $data['email'] = $email;
-
-    $where = array('id_user' => $id);
-
-    $this->model_pembayaran->update('user', $data, $where);
-    
-    // Tidak perlu melakukan session destroy
-    // $this->session->sess_destroy();
-
-    redirect('profile'); // Redirect kembali ke halaman profil
-}
-
 }
