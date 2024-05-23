@@ -140,7 +140,13 @@ License: You must have a valid license purchased only from themeforest(the above
             <!-- BEGIN: Account Menu -->
             <div class="intro-x dropdown w-8 h-8">
                 <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in scale-110" role="button" aria-expanded="false" data-tw-toggle="dropdown">
-                    <img alt="IEG PHOTO" src="<?= site_url('asset') ?>/user.png">
+                <?php
+                    $avatar = $this->session->userdata('avatar');
+                    if (!$avatar) {
+                        $avatar = 'user.png'; // Gambar default
+                    }
+                    ?>
+                    <img class="rounded-full" src="<?= base_url('uploads/profiles/' . $avatar) ?>">
                 </div>
                 <div class="dropdown-menu w-56">
                     <ul class="dropdown-content bg-primary/80 before:block before:absolute before:bg-black before:inset-0 before:rounded-md before:z-[-1] text-white">

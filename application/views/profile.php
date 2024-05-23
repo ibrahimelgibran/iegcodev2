@@ -9,7 +9,13 @@
         <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
             <div class="flex flex-1 px-5 items-center justify-center lg:justify-start">
                 <div class="w-20 h-20 sm:w-24 sm:h-24 flex-none lg:w-32 lg:h-32 image-fit relative">
-                    <img class="rounded-full" src="<?= base_url('asset') ?>/user.png">
+                    <?php
+                    $avatar = $this->session->userdata('avatar');
+                    if (!$avatar) {
+                        $avatar = 'user.png'; // Gambar default
+                    }
+                    ?>
+                    <img class="rounded-full" src="<?= base_url('uploads/profiles/' . $avatar) ?>">
                     <div class="absolute mb-1 mr-1 flex items-center justify-center bottom-0 right-0 bg-white rounded-full p-2"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-patch-check-fill text-success" viewBox="0 0 16 16">
                             <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                         </svg> </div>
@@ -96,7 +102,8 @@
                             <div id="work-in-progress-new" class="tab-pane active" role="tabpanel" aria-labelledby="work-in-progress-new-tab">
                                 <div class="flex flex-col-reverse xl:flex-row flex-col">
                                     <div class="flex-1 mt-6 xl:mt-0">
-                                        <form action="<?= site_url('profile/update') ?>" method="post">
+
+                                        <form action="<?= site_url('profile/update') ?>" method="post" enctype="multipart/form-data">
                                             <?php foreach ($profile as $row) : ?>
                                                 <div class="grid grid-cols-12 gap-x-5">
                                                     <div class="col-span-12 2xl:col-span-6">
@@ -107,18 +114,23 @@
                                                         </div>
                                                         <div class="mt-3">
                                                             <label for="update-profile-form-2" class="form-label">Your Email</label>
-                                                            <input id="update-profile-form-1" type="email" class="form-control" name="email" placeholder="Input text" value="<?= $row->email ?>">
+                                                            <input id="update-profile-form-2" type="email" class="form-control" name="email" placeholder="Input text" value="<?= $row->email ?>">
+                                                        </div>
+                                                        <div class="mt-3">
+                                                            <label for="update-profile-form-3" class="form-label">Profile Photo Max 2MB</label>
+                                                            <input id="update-profile-form-3" type="file" class="form-control" name="profile_photo">
                                                         </div>
                                                     </div>
                                                 </div>
                                             <?php endforeach; ?>
                                             <button type="submit" class="btn btn-primary w-20 mt-3">Save</button>
                                         </form>
+
                                     </div>
                                     <div class="w-52 mx-auto xl:mr-0 xl:ml-6">
                                         <div class="border-2 border-dashed shadow-sm border-slate-200/60 dark:border-darkmode-400 rounded-md p-5">
                                             <div class="h-40 relative image-fit cursor-pointer zoom-in mx-auto">
-                                                <img class="rounded-md" src="<?= base_url('asset') ?>/user.png">
+                                                <img class="rounded-full" src="<?= base_url('uploads/profiles/' . $row->avatar) ?>">
                                                 <div class="tooltip w-5 h-5 flex items-center justify-center absolute rounded-full text-white bg-primary right-0 top-0 -mr-2 -mt-2"> <i data-lucide="alert-circle" class="w-4 h-4"></i> </div>
                                             </div>
                                             <div class="mx-auto cursor-pointer relative mt-5">
