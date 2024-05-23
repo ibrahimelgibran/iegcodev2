@@ -50,12 +50,29 @@
               <input type="text" class="intro-x login__input form-control py-3 px-4 block" name="email" required autocomplete="off" placeholder="Email">
               <input type="password" class="intro-x login__input form-control py-3 px-4 block mt-4" name="password" required autocomplete="off" placeholder="Password">
             </div>
-            <div class="intro-x flex text-slate-600 dark:text-slate-500 text-xs sm:text-sm mt-4">
-              <div class="flex items-center mr-auto">
-                <input id="remember-me" type="checkbox" class="form-check-input border mr-2">
-                <label class="cursor-pointer select-none" for="remember-me">Remember me</label>
-              </div>
-            </div>
+            <div class="intro-x flex text-slate-600 dark:text-slate-500 text-xs sm:text-sm mt-4 flex-col sm:flex-row" style="align-items: flex-start;">
+  <div class="flex items-center mb-2 sm:mb-0 sm:mr-auto">
+    <input id="remember-me" type="checkbox" class="form-check-input border mr-2">
+    <label class="cursor-pointer select-none" for="remember-me">Remember me</label>
+  </div>
+  <div class="flex items-center ml-auto ml-auto-sm">
+    <p class="select-none">Lupa Password?&nbsp;</p>
+    <a href="https://wa.me/6285876076005?text=Hallo%20IEGCODE..." class="cursor-pointer select-none" style="color: blue;">Hub Admin 👨🏻‍💻</a>
+</div>
+
+</div>
+
+<style>
+@media screen and (max-width: 767px) {
+  .ml-auto-sm {
+    margin-left: auto !important;
+    margin-top: -25px !important;
+  }
+}
+</style>
+
+
+
             <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
               <button type="submit" class="btn btn-primary py-3 px-4 w-full xl:w-32 xl:mr-3 align-top">Login</button>
               <a href="<?= site_url('register') ?>" class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top">Register</a>
@@ -66,7 +83,9 @@
       </div>
       <!-- END: Login Form -->
     </div>
+    <br><br><br><br><br><br>
   </div>
+  
 
   <!-- BEGIN: JS Assets-->
   <script src="<?= site_url('asset') ?>/admin/dist/js/app.js"></script>

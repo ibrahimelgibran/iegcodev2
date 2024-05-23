@@ -32,20 +32,20 @@
                                     </h2>
                                 </div>
                                 <div class="p-5">
-                                    <form action="<?= site_url('change_password/process') ?>" method="post">
-                                   
-                                    <div class="mt-1">
-                                        <label for="change-password-form-2" class="form-label">New Password</label>
-                                        <input id="change-password-form-2" type="password" name="new_password" class="form-control" autocomplete="off">
-                                    </div>
-                                    <?= form_error('new_password', '<div class="text-danger small ml-2 mt-2">', '</div>') ?>
-                                    <div class="mt-3 mb-4">
-                                        <label for="change-password-form-3" class="form-label">Confirm New Password</label>
-                                        <input id="change-password-form-3" name="confirm_password" type="password" class="form-control" autocomplete="off">
-                                    </div>
-                                    <?= form_error('confirm_password', '<div class="text-danger small ml-2 mt-2">', '</div>') ?>
-                                    <button type="submit" class="btn btn-primary mt-4">Change Password</button>
-                                    </form>
+                                <form action="<?= site_url('change_password/process') ?>" method="post">
+    <div class="mt-1">
+        <label for="new_password" class="form-label">New Password</label>
+        <input id="new_password" type="password" name="new_password" class="form-control" autocomplete="off">
+    </div>
+    <?= form_error('new_password', '<div class="text-danger small ml-2 mt-2">', '</div>') ?>
+    <div class="mt-3 mb-4">
+        <label for="confirm_password" class="form-label">Confirm New Password</label>
+        <input id="confirm_password" name="confirm_password" type="password" class="form-control" autocomplete="off">
+    </div>
+    <?= form_error('confirm_password', '<div class="text-danger small ml-2 mt-2">', '</div>') ?>
+    <button type="submit" class="btn btn-primary mt-4">Change Password</button>
+</form>
+
                                 </div>
                             </div>
                             <!-- END: Change Password -->
