@@ -12,32 +12,32 @@ class Change_password extends CI_Controller
         $this->load->view('layout/user/footer');
     }
 
-    public function process() {
+    public function process()
+    {
         $new_password = $this->input->post('new_password');
         $confirm_password = $this->input->post('confirm_password');
 
-        $this->form_validation->set_rules('new_password', 'New Password', 'required');
-        $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'required|matches[new_password]');
+        $this->form_validation->set_rules('new_password', 'New Password', 'required|matches[confirm_password]');
+        $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'required');
 
         if ($this->form_validation->run() != FALSE) {
-            $user_id = $this->session->userdata('id_user');
-            $hashed_password = md5($new_password); // Enkripsi password dengan MD5
-            $data = array('password' => $hashed_password);
-            $id = array('id_user' => $user_id);
+            $data = array('password' => $new_password);
+            $id = array('id_user' => $this->session->userdata('id_user'));
 
-            $this->load->model('user_model');
-            if ($this->user_model->update('user', $data, $id)) {
-                redirect('welcome');
-            } else {
-                // Gagal memperbarui password
-                echo "Gagal memperbarui password.";
-            }
+            $this->model_pembayaran->update('user', $data, $id);
+
+            // Set pesan flash sebelum pengalihan
+            $this->session->set_flashdata('success_message', 'Password berhasil diubah.');
+
+            // Redirect ke halaman change_password
+            redirect('change_password');
         } else {
-            // Validasi form gagal
             $data['title'] = 'Change Password';
             $this->load->view('layout/user/header', $data);
             $this->load->view('change_password', $data);
             $this->load->view('layout/user/footer');
         }
+        // Hapus pesan flash setelah ditampilkan kepada pengguna
+        $this->session->unset_flashdata('success_message');
     }
 }
