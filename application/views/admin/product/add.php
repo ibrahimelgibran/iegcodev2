@@ -86,11 +86,12 @@
                                         <option value="Logo">Logo </option>
                                         <option value="Banner">Banner </option>
                                         <option value="E-Ticket">E-Ticket </option>
-                                        <option value="T-Shirt">T-Shirt</option>
-                                        <option value="Kids & Baby">Kids & Baby</option>
                                         <option value="Jacket">Jacket</option>
+                                        <option value="Celana">Celana</option>
+                                        <option value="T-Shirt">T-Shirt</option>
                                         <option value="Shoes">Shoes</option>
                                         <option value="Electronic">Electronic</option>
+                                        <option value="Kids & Baby">Kids & Baby</option>
                                         <option value="Fashion & Make Up">Fashion &amp; Make Up</option>
                                     </select>
                                 </div>

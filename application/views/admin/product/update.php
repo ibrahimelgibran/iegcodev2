@@ -40,6 +40,7 @@
                                                     <option value="Banner">Banner </option>
                                                     <option value="E-Ticket">E-Ticket</option>
                                                     <option value="Jacket">Jacket</option>
+                                                    <option value="Celana">Celana</option>
                                                     <option value="T-Shirt">T-Shirt</option>
                                                     <option value="Shoes">Shoes</option>
                                                     <option value="Electronic">Electronic</option>

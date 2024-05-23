@@ -24,6 +24,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <script type="text/javascript" src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-kmbmTlxtNRFjaL3L"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- END: CSS Assets-->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <!-- END: Head -->
 
@@ -133,7 +134,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         </li>
                         <li>
                             <a href="<?= base_url('categories/suntik') ?>" class="menu">
-                                <div class="side-menu__icon"><i data-lucide="pipette"></i></div>
+                                <div class="side-menu__icon"><i data-lucide="syringe"></i></div>
                                 <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Suntik Followers IG, YouTube, Tiktok</div>
                             </a>
                         </li>
@@ -166,27 +167,36 @@ License: You must have a valid license purchased only from themeforest(the above
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url('categories/shirt') ?>" class="menu">
-                        <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
-                        <div class="side-menu__title" style="margin-left: 10px;"> T-Shirt
-                            <div class="side-menu__sub-icon transform rotate-180"> </div>
-                        </div>
+                    <a href="#" class="menu">
+                        <div class="side-menu__icon"><i data-lucide="shopping-bag"></i></div>
+                        <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Berbrandstuff</div>
                     </a>
-                </li>
-                <li>
-                    <a href="<?= base_url('categories/jacket') ?>" class="menu">
-                        <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
-                        <div class="side-menu__title" style="margin-left: 10px;">
-                            Jacket
-                            <div class="side-menu__sub-icon "></div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?= base_url('categories/shoes') ?>" class="menu">
-                        <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
-                        <div class="side-menu__title" style="margin-left: 10px;"> Shoes </div>
-                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="<?= base_url('categories/jacket') ?>" class="menu">
+                                <div class="side-menu__icon"><i data-lucide="shirt"></i></div>
+                                <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Jacket</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= base_url('categories/trousers') ?>" class="menu">
+                                <div class="side-menu__icon"><i data-lucide="footprints"></i></div>
+                                <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Celana</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= base_url('categories/shirt') ?>" class="menu">
+                                <div class="side-menu__icon"><i data-lucide="shirt"></i></div>
+                                <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">T-Shirt</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= base_url('categories/shoes') ?>" class="menu">
+                                <div class="side-menu__icon"><i data-lucide="footprints"></i></div>
+                                <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Shoes</div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="<?= base_url('categories/elektronik') ?>" class="menu">
@@ -197,14 +207,14 @@ License: You must have a valid license purchased only from themeforest(the above
 
                 <li>
                     <a href="<?= base_url('categories/kids') ?>" class="menu">
-                        <div class="side-menu__icon"> <i data-lucide="dribbble"></i> </div>
+                        <div class="side-menu__icon"> <i data-lucide="baby"></i> </div>
                         <div class="side-menu__title" style="margin-left: 10px;"> Kids & Baby </div>
                     </a>
                 </li>
 
                 <li>
                     <a href="<?= base_url('categories/fashion') ?>" class="menu">
-                        <div class="side-menu__icon"> <i data-lucide="heart"></i> </div>
+                        <div class="side-menu__icon"> <i data-lucide="heart-handshake"></i> </div>
                         <div class="side-menu__title" style="margin-left: 10px;"> Fashion & Make Up </div>
                     </a>
                 </li>
@@ -295,7 +305,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </li>
                             <li>
                                 <a href="<?= base_url('categories/suntik') ?>" class="side-menu">
-                                    <div class="side-menu__icon"><i data-lucide="pipette"></i></div>
+                                    <div class="side-menu__icon"><i data-lucide="syringe"></i></div>
                                     <div class="side-menu__title">Suntik Followers IG, YouTube, Tiktok</div>
                                 </a>
                             </li>
@@ -369,28 +379,58 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="side-menu__title"> E-Ticket </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="<?= base_url('categories/shirt') ?>" class="side-menu side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
-                            <div class="side-menu__title"> T-Shirt
-                                <div class="side-menu__sub-icon transform rotate-180"> </div>
-                            </div>
+                    <li class="parent-menu">
+                        <a href="#" class="side-menu">
+                            <div class="side-menu__icon"><i data-lucide="shopping-bag"></i></div>
+                            <div class="side-menu__title">Berbrandstuff</div>
                         </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('categories/jacket') ?>" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="shirt"></i> </div>
-                            <div class="side-menu__title">
-                                Jacket
-                                <div class="side-menu__sub-icon "></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('categories/shoes') ?>" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
-                            <div class="side-menu__title"> Shoes </div>
-                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="<?= base_url('categories/jacket') ?>" class="side-menu">
+                                    <div class="side-menu__icon"><i data-lucide="shirt"></i></div>
+                                    <div class="side-menu__title">Jacket</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?= base_url('categories/trousers') ?>" class="side-menu">
+                                    <div class="side-menu__icon"><i data-lucide="footprints"></i></div>
+                                    <div class="side-menu__title">Celana</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?= base_url('categories/shirt') ?>" class="side-menu">
+                                    <div class="side-menu__icon"><i data-lucide="shirt"></i></div>
+                                    <div class="side-menu__title">T-Shirt</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?= base_url('categories/shoes') ?>" class="side-menu">
+                                    <div class="side-menu__icon"><i data-lucide="footprints"></i></div>
+                                    <div class="side-menu__title">Shoes</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <style>
+                            /* Sembunyikan submenu secara default */
+                            .sub-menu {
+                                display: none;
+                            }
+                        </style>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // Pilih elemen yang akan diklik (item menu "Graphic Design")
+                                var parentMenuItem = document.querySelector('.parent-menu');
+
+                                // Pilih submenu dari item menu "Graphic Design"
+                                var submenu = parentMenuItem.querySelector('.sub-menu');
+
+                                // Tambahkan event listener untuk menangani klik pada item menu "Graphic Design"
+                                parentMenuItem.addEventListener('click', function(event) {
+                                    // Toggle tampilan submenu (dari tersembunyi menjadi terlihat, dan sebaliknya)
+                                    submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+                                });
+                            });
+                        </script>
                     </li>
                     <li>
                         <a href="<?= base_url('categories/elektronik') ?>" class="side-menu">
@@ -401,14 +441,14 @@ License: You must have a valid license purchased only from themeforest(the above
 
                     <li>
                         <a href="<?= base_url('categories/kids') ?>" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="dribbble"></i> </div>
+                            <div class="side-menu__icon"> <i data-lucide="baby"></i> </div>
                             <div class="side-menu__title"> Kids & Baby </div>
                         </a>
                     </li>
 
                     <li>
                         <a href="<?= base_url('categories/fashion') ?>" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="heart"></i> </div>
+                            <div class="side-menu__icon"> <i data-lucide="heart-handshake"></i> </div>
                             <div class="side-menu__title"> Fashion & Make Up </div>
                         </a>
                     </li>
@@ -443,3 +483,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     }
                 </style>
             </footer>
+
+            <script>
+                lucide.createIcons();
+            </script>

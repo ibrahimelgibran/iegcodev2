@@ -132,4 +132,13 @@ class Categories extends CI_Controller
 		$this->load->view('suntik', $data);
 		$this->load->view('layout/home/footer');
 	}
+
+	public function trousers()
+	{
+		$data['title'] = 'Celana Categories';
+		$data['trousers'] = $this->model_kategori->trousers()->result();
+		$this->load->view('layout/home/header', $data);
+		$this->load->view('trousers', $data);
+		$this->load->view('layout/home/footer');
+	}
 }
