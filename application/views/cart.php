@@ -15,7 +15,12 @@
             <div class="box p-5 rounded-md">
                 <div class="flex items-center border-b border-slate-200/60 dark:border-darkmode-400 pb-5 mb-5">
                     <div class="font-medium text-base truncate">Order Details</div>
-                    <a href="<?= site_url('dashboard/checkout') ?>" class="flex items-center ml-auto btn btn-primary shadow-md mr-2"><i data-lucide="activity" class="w-4 h-4 mr-2"></i>&nbsp;CHECKOUT </a>
+                    <?php if ($this->cart->total_items() > 0) : ?> <!-- Periksa apakah keranjang belanja memiliki barang atau tidak -->
+                        <a href="<?= site_url('dashboard/checkout') ?>" class="flex items-center ml-auto btn btn-primary shadow-md mr-2"><i data-lucide="activity" class="w-4 h-4 mr-2"></i>&nbsp;CHECKOUT </a>
+                    <?php else : ?>
+                        <a href="#" class="flex items-center ml-auto btn btn-primary shadow-md mr-2 disabled" onclick="return false;"><i data-lucide="activity" class="w-4 h-4 mr-2"></i>&nbsp;CHECKOUT </a>
+                        <!-- Tambahkan class "disabled" untuk membuat tombol tidak aktif -->
+                    <?php endif; ?>
                 </div>
                 <div class="overflow-auto lg:overflow-visible -mt-3">
                     <table class="table table-striped">
@@ -31,23 +36,33 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php $no = 1;
-                            foreach ($this->cart->contents() as $items) : ?>
-                                <tr>
-                                    <td><a href=""><i data-lucide="trash-2" class="w-4 h-4"></i></a></td>
-                                    <td class="!py-4">
-                                        <div class="flex items-center">
-                                            <div class="w-10 h-10 image-fit zoom-in">
-                                                <img alt="IEG PHOTO" class="rounded-lg border-2 border-white shadow-md tooltip" src="<?= base_url() . '/uploads/' . $items['options']['gambar']; ?>" title="Uploaded at 8 December 2021">
+                            <?php if ($this->cart->contents()) : ?>
+                                <?php foreach ($this->cart->contents() as $items) : ?>
+                                    <tr>
+                                        <td><a href=""><i data-lucide="trash-2" class="w-4 h-4"></i></a></td>
+                                        <td class="!py-4">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 image-fit zoom-in">
+                                                    <img alt="IEG PHOTO" class="rounded-lg border-2 border-white shadow-md tooltip" src="<?= base_url() . '/uploads/' . $items['options']['gambar']; ?>" title="Uploaded at 8 December 2021">
+                                                </div>
+                                                <a href="" class="font-medium whitespace-nowrap ml-4"><?= $items['name']; ?></a>
                                             </div>
-                                            <a href="" class="font-medium whitespace-nowrap ml-4"><?= $items['name']; ?></a>
+                                        </td>
+                                        <td class="text-right">Rp. <?= number_format($items['price'], 0, ',', '.') ?></td>
+                                        <td class="text-right"><?= number_format($items['qty'], 0, ',', '.') ?></td>
+                                        <td class="text-right">Rp. <?= number_format($items['subtotal'], 0, ',', '.') ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php else : ?>
+                                <tr>
+                                    <td colspan="5">
+                                        <div class="alert alert-warning" role="alert">
+                                            Product min 1 untuk melanjutkan checkout.
                                         </div>
                                     </td>
-                                    <td class="text-right">Rp. <?= number_format($items['price'], 0, ',', '.') ?></td>
-                                    <td class="text-right"><?= number_format($items['qty'], 0, ',', '.') ?></td>
-                                    <td class="text-right">Rp. <?= number_format($items['subtotal'], 0, ',', '.') ?></td>
                                 </tr>
-                            <?php endforeach; ?>
+                            <?php endif; ?>
+
                             <tr>
                                 <td colspan="4"></td>
                                 <td class="text-right"><strong>Rp. <?= number_format($this->cart->total(), 0, ',', '.') ?>,-</strong></td>
@@ -57,6 +72,6 @@
                 </div>
             </div>
         </div>
+
+        <!-- END: Transaction Details -->
     </div>
-    <!-- END: Transaction Details -->
-</div>
