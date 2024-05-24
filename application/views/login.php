@@ -11,6 +11,7 @@
   <meta name="author" content="LEFT4CODE">
   <title><?= $title ?> | IEG</title>
   <!-- BEGIN: CSS Assets-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.18/sweetalert2.min.css">
   <link rel="stylesheet" href="<?= site_url('asset') ?>/admin/dist/css/app.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" rel="stylesheet">
   </link>
@@ -39,7 +40,7 @@
       </div>
       <!-- END: Login Info -->
       <!-- BEGIN: Login Form -->
-      <div class="h-screen xl:h-auto flex py-5 xl:py-0 my-10 xl:my-0">
+      <div class="h-screen xl:h-auto flex py-5 xl:py-0 my-0 xl:my-0">
         <div class="my-auto mx-auto xl:ml-20 bg-white dark:bg-darkmode-600 xl:bg-transparent px-5 sm:px-8 py-8 xl:p-0 rounded-md shadow-md xl:shadow-none w-full sm:w-3/4 lg:w-2/4 xl:w-auto">
           <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left">
             Sign In
@@ -51,28 +52,23 @@
               <input type="password" class="intro-x login__input form-control py-3 px-4 block mt-4" name="password" required autocomplete="off" placeholder="Password">
             </div>
             <div class="intro-x flex text-slate-600 dark:text-slate-500 text-xs sm:text-sm mt-4 flex-col sm:flex-row" style="align-items: flex-start;">
-  <div class="flex items-center mb-2 sm:mb-0 sm:mr-auto">
-    <input id="remember-me" type="checkbox" class="form-check-input border mr-2">
-    <label class="cursor-pointer select-none" for="remember-me">Remember me</label>
-  </div>
-  <div class="flex items-center ml-auto ml-auto-sm">
-    <p class="select-none">Lupa Password?&nbsp;</p>
-    <a href="https://wa.me/6285876076005?text=Hallo%20IEGCODE..." class="cursor-pointer select-none" style="color: blue;">Hub Admin 👨🏻‍💻</a>
-</div>
-
-</div>
-
-<style>
-@media screen and (max-width: 767px) {
-  .ml-auto-sm {
-    margin-left: auto !important;
-    margin-top: -25px !important;
-  }
-}
-</style>
-
-
-
+              <div class="flex items-center mb-2 sm:mb-0 sm:mr-auto">
+                <input id="remember-me" type="checkbox" class="form-check-input border mr-2">
+                <label class="cursor-pointer select-none" for="remember-me">Remember me</label>
+              </div>
+              <div class="flex items-center ml-auto ml-auto-sm">
+                <p class="select-none">Lupa Password?&nbsp;</p>
+                <a href="https://wa.me/6285876076005?text=Hallo%20IEGCODE..." class="cursor-pointer select-none" style="color: blue;">Hub Admin 👨🏻‍💻</a>
+              </div>
+            </div>
+            <style>
+              @media screen and (max-width: 767px) {
+                .ml-auto-sm {
+                  margin-left: auto !important;
+                  margin-top: -25px !important;
+                }
+              }
+            </style>
             <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
               <button type="submit" class="btn btn-primary py-3 px-4 w-full xl:w-32 xl:mr-3 align-top">Login</button>
               <a href="<?= site_url('register') ?>" class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top">Register</a>
@@ -83,9 +79,8 @@
       </div>
       <!-- END: Login Form -->
     </div>
-    <br><br><br><br><br><br>
   </div>
-  
+
 
   <!-- BEGIN: JS Assets-->
   <script src="<?= site_url('asset') ?>/admin/dist/js/app.js"></script>
@@ -121,3 +116,26 @@
 </body>
 
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Mencegah form submit secara default
+
+      // Simulasi proses login
+      // Di sini Anda bisa menambahkan logika untuk memeriksa kredensial, misalnya dengan AJAX request
+
+      // Tampilkan pop-up "Anda berhasil login"
+      Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: 'Anda berhasil login',
+        confirmButtonText: 'OK'
+      }).then(() => {
+        // Setelah pop-up ditutup, lanjutkan ke halaman selanjutnya
+        this.submit();
+      });
+    });
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.18/sweetalert2.min.js"></script>
+

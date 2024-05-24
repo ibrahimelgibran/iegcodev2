@@ -19,17 +19,20 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta name="keywords" content="admin template, Icewall Admin Template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="LEFT4CODE">
     <title><?= $title ?> | IEG</title>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- BEGIN: CSS Assets-->
     <link rel="stylesheet" href="<?= site_url('asset') ?>/admin/dist/css/app.css" />
     <script type="text/javascript" src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="SB-Mid-client-kmbmTlxtNRFjaL3L"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <!-- END: CSS Assets-->
 </head>
 <!-- END: Head -->
 
 <body class="main">
 
-    
+
 
     <!-- BEGIN: Mobile Menu -->
     <div class="mobile-menu md:hidden">
@@ -66,11 +69,16 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="side-menu__title" style="margin-left: 10px;"> Billing History </div>
                     </a>
                 </li>
-
                 <li>
                     <a href="<?= base_url('pay') ?>" class="menu">
                         <div class="side-menu__icon"> <i data-lucide="file-text"></i> </div>
                         <div class="side-menu__title" style="margin-left: 10px;"> Invoice History </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/6285876076005?text=Hallo%20IEGCODE..." class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="message-square-text"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Live Chat </div>
                     </a>
                 </li>
                 <li class="side-nav__devider my-6"></li>
@@ -86,7 +94,6 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="side-menu__title" style="margin-left: 10px;"> Change Password </div>
                     </a>
                 </li>
-
             </ul>
         </div>
     </div>
@@ -140,7 +147,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <!-- BEGIN: Account Menu -->
             <div class="intro-x dropdown w-8 h-8">
                 <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in scale-110" role="button" aria-expanded="false" data-tw-toggle="dropdown">
-                <?php
+                    <?php
                     $avatar = $this->session->userdata('avatar');
                     if (!$avatar) {
                         $avatar = 'user.png'; // Gambar default
@@ -217,7 +224,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </li>
                     <li>
                         <a href="https://wa.me/6285876076005?text=Hallo%20IEGCODE..." class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="message-square"></i> </div>
+                            <div class="side-menu__icon"> <i data-lucide="message-square-text"></i> </div>
                             <div class="side-menu__title"> Live Chat </div>
                         </a>
                     </li>
@@ -238,28 +245,32 @@ License: You must have a valid license purchased only from themeforest(the above
             </nav>
             <!-- END: Side Menu -->
 
-            
-            <footer>
-  made with ❤️ by
-  <a href="http://ibrahimelgibran.com">iegcode </a>
-  <style>
-    footer {
-      color: #fff;
-     margin-bottom: -70px;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      text-align: center;
-      font-size: 15px;
-      position: fixed;
-      padding: 20px 0;
-      font-weight: bold;
-      bottom: 0;
-      width: 100%;
-    }
 
-    @media (max-width: 768spx) {
-      footer {
-        margin-left: 0; /* Reset margin-left */
-      }
-    }
-  </style>
-</footer>
+            <footer>
+                made with ❤️ by
+                <a href="http://ibrahimelgibran.com">iegcode </a>
+                <style>
+                    footer {
+                        color: #fff;
+                        margin-bottom: -70px;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        text-align: center;
+                        font-size: 15px;
+                        position: fixed;
+                        padding: 20px 0;
+                        font-weight: bold;
+                        bottom: 0;
+                        width: 100%;
+                    }
+
+                    @media (max-width: 768spx) {
+                        footer {
+                            margin-left: 0;
+                            /* Reset margin-left */
+                        }
+                    }
+                </style>
+            </footer>
+            <script>
+                lucide.createIcons();
+            </script>

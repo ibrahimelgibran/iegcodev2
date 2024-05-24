@@ -1,5 +1,11 @@
 <div class="content">
-    <div class="intro-y flex items-center mt-8">
+    <div class="col-span-12 mt-6 -mb-6 intro-y">
+        <div class="alert alert-dismissible show box bg-primary text-white flex items-center mb-6" role="alert">
+            <span>Hallo selamat datang, <b><?= $this->session->userdata('nama_user') ?></b> Silahkan kelola dashboard toko online Anda.</span>
+            <button type="button" class="btn-close text-white" data-tw-dismiss="alert" aria-label="Close"> <i data-lucide="x" class="w-4 h-4"></i> </button>
+        </div>
+    </div>
+    <div class="intro-y flex items-center mt-12">
         <h2 class="text-lg font-medium mr-auto">
             Profile Layout
         </h2>
