@@ -103,7 +103,15 @@
                             <img class="mt-2" src="<?= site_url('asset') ?>/bsi.png" width="100">
                         </div>
                         <div class="text-slate-500"></div>
-                        <div class="ml-auto font-medium">7205751291 | A.n IBRAHIM EL GIBRAN</div>
+                        <div class="ml-auto font-medium">7205751291 | A.n. IBRAHIM EL GIBRAN</div>
+                    </a>
+                    <a href="#" class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-darkmode-600 hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md">
+                    <!-- <a href="javascript:;" data-tw-toggle="modal" data-tw-target="#add-item-modal" class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-darkmode-600 hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md"> -->
+                        <div class="max-w-[50%] truncate mr-1">
+                            <img class="mt-2" src="<?= site_url('asset') ?>/bankjago.png" width="100">
+                        </div>
+                        <div class="text-slate-500"></div>
+                        <div class="ml-auto font-medium">504304694320 | A.n. IBRAHIM EL GIBRAN</div>
                     </a>
                     <a href="#" class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-darkmode-600 hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md">
                     <!-- <a href="javascript:;" data-tw-toggle="modal" data-tw-target="#add-item-modal" class="flex items-center p-3 cursor-pointer transition duration-300 ease-in-out bg-white dark:bg-darkmode-600 hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md"> -->
@@ -111,7 +119,7 @@
                             <img class="mt-2" src="<?= site_url('asset') ?>/dana.png" width="100">
                         </div>
                         <div class="text-slate-500"></div>
-                        <div class="ml-auto font-medium">085876076005 | A.n IBRAHIM EL GIBRAN</div>
+                        <div class="ml-auto font-medium">085876076005 | A.n. IBRAHIM EL GIBRAN</div>
                     </a>
                 </div>
 
@@ -119,9 +127,10 @@
                     
                     <h1>Silakan lewati pembayaran dengan prosedur berikut:</h1>
                     <br>
-                    <p>• Virtual Account Bank: <br>  <strong>BSI 7205751291</strong> An. Ibrahim El Gibran</p>
+                    <p>• Virtual Account Bank: <br><strong>BSI 7205751291</strong> A.n. Ibrahim El Gibran</p>
+                    <p><strong>Bank Jago 504304694320</strong> A.n. Ibrahim El Gibran</p>
                     <br>
-                    <p>• E-Wallet: <br>  <strong>DANA 085876076005</strong> An. Ibrahim El Gibran</p>
+                    <p>• E-Wallet: <br>  <strong>DANA 085876076005</strong> A.n. Ibrahim El Gibran</p>
                     <br>
                     <p>Jika anda sudah melakukan pembayaran <br> silakan kirimkan bukti setelah anda <strong>Pay Order.</strong></p>                     
                 </div>
