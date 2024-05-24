@@ -46,7 +46,10 @@ class Invoice extends CI_Controller
 		$data['pesanan'] = $this->model_invoice->get_id_pesanan($id_invoice);
 		$this->load->library('pdf');
 		$this->pdf->setPaper('A4', 'potrait');
-		$this->pdf->filename = "Invoice Bill.pdf";
+		// $this->pdf->filename = "Invoice Bill.pdf";
+		// Use the invoice order_id as the filename
+		$invoice_number = $data['invoice']->order_id;
+		$this->pdf->filename = "Invoice_{$invoice_number}.pdf";	
 		$this->pdf->load_view('admin/payment/pdf', $data);
 	}
 }
