@@ -81,6 +81,18 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="side-menu__title" style="margin-left: 10px;"> Live Chat </div>
                     </a>
                 </li>
+                <li>
+                    <a href="https://donasin.vercel.app" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="hand-heart"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> OPEN DONASI</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ieggame.vercel.app" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="gamepad-2"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> MAIN GAME GRATIS </div>
+                    </a>
+                </li>
                 <li class="side-nav__devider my-6"></li>
                 <li>
                     <a href="<?= base_url('profile') ?>" class="menu">
@@ -226,6 +238,19 @@ License: You must have a valid license purchased only from themeforest(the above
                         <a href="https://wa.me/6285876076005?text=Hallo%20IEGCODE..." class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="message-square-text"></i> </div>
                             <div class="side-menu__title"> Live Chat </div>
+                        </a>
+                    </li>
+                    <li class="side-nav__devider my-6"></li>
+                    <li>
+                        <a href="https://donasin.vercel.app" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="hand-heart"></i> </div>
+                            <div class="side-menu__title">OPEN DONASI </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ieggame.vercel.app/" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="gamepad-2"></i> </div>
+                            <div class="side-menu__title">MAIN GAME GRATIS </div>
                         </a>
                     </li>
                     <li class="side-nav__devider my-6"></li>
