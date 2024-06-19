@@ -88,6 +88,12 @@ License: You must have a valid license purchased only from themeforest(the above
                     </a>
                 </li>
                 <li>
+                    <a href="https://chat-cici.vercel.app" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="bot-message-square"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> CHAT AI by Cici</div>
+                    </a>
+                </li>
+                <li>
                     <a href="https://ieggame.vercel.app" class="menu">
                         <div class="side-menu__icon"> <i data-lucide="gamepad-2"></i> </div>
                         <div class="side-menu__title" style="margin-left: 10px;"> MAIN GAME GRATIS </div>
@@ -245,6 +251,12 @@ License: You must have a valid license purchased only from themeforest(the above
                         <a href="https://donasin.vercel.app" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="hand-heart"></i> </div>
                             <div class="side-menu__title">OPEN DONASI </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://chat-cici.vercel.app" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="bot-message-square"></i> </div>
+                            <div class="side-menu__title">CHAT AI by Cici</div>
                         </a>
                     </li>
                     <li>
