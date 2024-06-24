@@ -21,22 +21,22 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta itemprop="name" content="IEGCODE - E-Commerce" />
     <meta name="url" content="https://www.iegcode.my.id">
     <meta name="language" content="Indonesia, English">
-	<meta name="robots" content="index,follow" />
-	<meta name="revised" content="Sunday, Des, 24th, 2024, 5:15 pm" />
+    <meta name="robots" content="index,follow" />
+    <meta name="revised" content="Sunday, Des, 24th, 2024, 5:15 pm" />
     <meta name="designer" content="iegocde, iegcodeid@gmail.com">
-	<meta name="reply-to" content="info@smkmuhammadiyahgamping.sch.id">
-	<meta name="owner" content="smkmuhammadiyahgamping">
+    <meta name="reply-to" content="info@smkmuhammadiyahgamping.sch.id">
+    <meta name="owner" content="smkmuhammadiyahgamping">
     <meta http-equiv="imagetoolbar" content="no" />
-	<meta name="revisit-after" content="7" />
-	<meta name="webcrawlers" content="all" />
-	<meta name="rating" content="general" />
-	<meta name="spiders" content="all" />
-	<meta name="identifier-URL" content="https://www.iegcode.my.id">
+    <meta name="revisit-after" content="7" />
+    <meta name="webcrawlers" content="all" />
+    <meta name="rating" content="general" />
+    <meta name="spiders" content="all" />
+    <meta name="identifier-URL" content="https://www.iegcode.my.id">
     <meta name="category" content="Admission, Education, IT, Programmer, Programming, Coding, Source Code, E-Commerce, Services">
-	<meta name="coverage" content="Worldwide">
-	<meta name="distribution" content="Global">
-	<meta name="rating" content="General">
-	<meta name="revisit-after" content="7 days">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="revisit-after" content="7 days">
     <title><?= $title ?> | IEG</title>
     <!-- BEGIN: CSS Assets-->
     <link rel="stylesheet" href="<?= site_url('asset') ?>/admin/dist/css/app.css" />
@@ -188,7 +188,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <li>
                     <a href="#" class="menu">
                         <div class="side-menu__icon"><i data-lucide="shopping-bag"></i></div>
-                        <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Berbrandstuff</div>
+                        <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">Iegcodestuff</div>
                     </a>
                     <ul class="sub-menu">
                         <li>
@@ -238,24 +238,31 @@ License: You must have a valid license purchased only from themeforest(the above
                     </a>
                 </li>
                 <li>
-                    <a href="https://donasin.vercel.app" class="menu">
-                        <div class="side-menu__icon"> <i data-lucide="hand-heart"></i> </div>
-                        <div class="side-menu__title" style="margin-left: 10px;"> OPEN DONASI</div>
+                    <a href="#" class="menu">
+                        <div class="side-menu__icon"><i data-lucide="menu"></i></div>
+                        <div class="side-menu__title" style="margin-left: 10px; margin-top:5px">New Feature IEGCODE</div>
                     </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="https://donasin.vercel.app" class="menu">
+                                <div class="side-menu__icon"> <i data-lucide="hand-heart"></i> </div>
+                                <div class="side-menu__title" style="margin-left: 10px;"> OPEN DONASI</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://chat-cici.vercel.app" class="menu">
+                                <div class="side-menu__icon"> <i data-lucide="bot-message-square"></i> </div>
+                                <div class="side-menu__title" style="margin-left: 10px;"> CHAT AI by Cici</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ieggame.vercel.app" class="menu">
+                                <div class="side-menu__icon"> <i data-lucide="gamepad-2"></i> </div>
+                                <div class="side-menu__title" style="margin-left: 10px;"> MAIN GAME GRATIS </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="https://chat-cici.vercel.app" class="menu">
-                        <div class="side-menu__icon"> <i data-lucide="bot-message-square"></i> </div>
-                        <div class="side-menu__title" style="margin-left: 10px;"> CHAT AI by Cici</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://ieggame.vercel.app" class="menu">
-                        <div class="side-menu__icon"> <i data-lucide="gamepad-2"></i> </div>
-                        <div class="side-menu__title" style="margin-left: 10px;"> MAIN GAME GRATIS </div>
-                    </a>
-                </li>
-                
             </ul>
         </div>
     </div>
@@ -324,19 +331,19 @@ License: You must have a valid license purchased only from themeforest(the above
                         </a>
                     </li>
                     <script>
-                          document.addEventListener('DOMContentLoaded', function() {
-                                // Pilih elemen yang akan diklik (item menu "Graphic Design")
-                                var parentMenuItem = document.querySelector('.parent-menu');
+                        document.addEventListener('DOMContentLoaded', function() {
+                            // Pilih elemen yang akan diklik (item menu "Graphic Design")
+                            var parentMenuItem = document.querySelector('.parent-menu');
 
-                                // Pilih submenu dari item menu "Graphic Design"
-                                var submenu = parentMenuItem.querySelector('.sub-menu');
+                            // Pilih submenu dari item menu "Graphic Design"
+                            var submenu = parentMenuItem.querySelector('.sub-menu');
 
-                                // Tambahkan event listener untuk menangani klik pada item menu "Graphic Design"
-                                parentMenuItem.addEventListener('click', function(event) {
-                                    // Toggle tampilan submenu (dari tersembunyi menjadi terlihat, dan sebaliknya)
-                                    submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
-                                });
+                            // Tambahkan event listener untuk menangani klik pada item menu "Graphic Design"
+                            parentMenuItem.addEventListener('click', function(event) {
+                                // Toggle tampilan submenu (dari tersembunyi menjadi terlihat, dan sebaliknya)
+                                submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
                             });
+                        });
                     </script>
                     <li class="parent-menu">
                         <a href="#" class="side-menu">
@@ -435,7 +442,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <li class="parent-menu">
                         <a href="#" class="side-menu">
                             <div class="side-menu__icon"><i data-lucide="shopping-bag"></i></div>
-                            <div class="side-menu__title">Berbrandstuff</div>
+                            <div class="side-menu__title">Iegcodestuff</div>
                         </a>
                         <ul class="sub-menu">
                             <li>
@@ -507,23 +514,53 @@ License: You must have a valid license purchased only from themeforest(the above
                     </li>
 
                     <li class="side-nav__devider my-6"></li>
-                    <li>
-                        <a href="https://donasin.vercel.app" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="hand-heart"></i> </div>
-                            <div class="side-menu__title">OPEN DONASI </div>
+
+                    <li class="parent-menu">
+                        <a href="#" class="side-menu">
+                            <div class="side-menu__icon"><i data-lucide="menu"></i></div>
+                            <div class="side-menu__title">New Feature IEGCODE</div>
                         </a>
-                    </li>
-                    <li>
-                        <a href="https://chat-cici.vercel.app" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="bot-message-square"></i> </div>
-                            <div class="side-menu__title">CHAT AI by Cici</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://ieggame.vercel.app/" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="gamepad-2"></i> </div>
-                            <div class="side-menu__title">MAIN GAME GRATIS </div>
-                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="https://donasin.vercel.app" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="hand-heart"></i> </div>
+                                    <div class="side-menu__title">OPEN DONASI </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://chat-cici.vercel.app" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="bot-message-square"></i> </div>
+                                    <div class="side-menu__title">CHAT AI by Cici</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ieggame.vercel.app/" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="gamepad-2"></i> </div>
+                                    <div class="side-menu__title">MAIN GAME GRATIS </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <style>
+                            /* Sembunyikan submenu secara default */
+                            .sub-menu {
+                                display: none;
+                            }
+                        </style>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // Pilih elemen yang akan diklik (item menu "Graphic Design")
+                                var parentMenuItem = document.querySelector('.parent-menu');
+
+                                // Pilih submenu dari item menu "Graphic Design"
+                                var submenu = parentMenuItem.querySelector('.sub-menu');
+
+                                // Tambahkan event listener untuk menangani klik pada item menu "Graphic Design"
+                                parentMenuItem.addEventListener('click', function(event) {
+                                    // Toggle tampilan submenu (dari tersembunyi menjadi terlihat, dan sebaliknya)
+                                    submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+                                });
+                            });
+                        </script>
                     </li>
                     <li class="side-nav__devider my-6"></li>
                 </ul>
