@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta name="description" content="Icewall admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Icewall Admin Template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="LEFT4CODE">
-    <title><?= $title ?> | IEG</title>
+    <title><?= $title ?> | IEGCODE</title>
       <!-- Font Awesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- BEGIN: CSS Assets-->
@@ -79,6 +79,12 @@ License: You must have a valid license purchased only from themeforest(the above
                     <a href="https://wa.me/6285876076005?text=Hallo%20IEGCODE..." class="menu">
                         <div class="side-menu__icon"> <i data-lucide="message-square-text"></i> </div>
                         <div class="side-menu__title" style="margin-left: 10px;"> Live Chat </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://profile.iegcode.com" class="menu">
+                        <div class="side-menu__icon"> <i data-lucide="globe"></i> </div>
+                        <div class="side-menu__title" style="margin-left: 10px;">What is IEGCODE?</div>
                     </a>
                 </li>
                 <li>
@@ -247,6 +253,12 @@ License: You must have a valid license purchased only from themeforest(the above
                         </a>
                     </li>
                     <li class="side-nav__devider my-6"></li>
+                    <li>
+                        <a href="https://profile.iegcode.com" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="globe"></i> </div>
+                            <div class="side-menu__title">What is IEGCODE? </div>
+                        </a>
+                    </li>
                     <li>
                         <a href="https://donasin.vercel.app" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="hand-heart"></i> </div>

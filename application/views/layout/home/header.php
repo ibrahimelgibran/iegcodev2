@@ -244,6 +244,12 @@ License: You must have a valid license purchased only from themeforest(the above
                     </a>
                     <ul class="sub-menu">
                         <li>
+                            <a href="https://profile.iegcode.com" class="menu">
+                                <div class="side-menu__icon"> <i data-lucide="globe"></i> </div>
+                                <div class="side-menu__title" style="margin-left: 10px;">What is IEGCODE?</div>
+                            </a>
+                        </li>
+                        <li>
                             <a href="https://donasin.vercel.app" class="menu">
                                 <div class="side-menu__icon"> <i data-lucide="hand-heart"></i> </div>
                                 <div class="side-menu__title" style="margin-left: 10px;"> OPEN DONASI</div>
@@ -521,6 +527,12 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="side-menu__title">New Feature IEGCODE</div>
                         </a>
                         <ul class="sub-menu">
+                            <li>
+                                <a href="https://profile.iegcode.com/" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="globe"></i> </div>
+                                    <div class="side-menu__title">What is IEGCODE? </div>
+                                </a>
+                            </li>
                             <li>
                                 <a href="https://donasin.vercel.app" class="side-menu">
                                     <div class="side-menu__icon"> <i data-lucide="hand-heart"></i> </div>
