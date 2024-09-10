@@ -78,7 +78,7 @@
                                     <select id="category" name="kategori" class="form-select">
                                         <option hidden>-- Select Categories --</option>
                                         <option value="Project">Source Code </option>
-                                        <option value="Jasa">Pembuatan Website </option>
+                                        <option value="Jasa">Pembuatan Aplikasi </option>
                                         <option value="UI/UX">UI/UX </option>
                                         <option value="Pulsa">Pulsa </option>
                                         <option value="Topup Game">Topup Game </option>

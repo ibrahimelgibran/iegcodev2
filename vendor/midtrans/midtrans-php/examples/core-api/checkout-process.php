@@ -54,12 +54,12 @@ $items = array(
 
 // Populate customer's billing address
 $billing_address = array(
-    'first_name'   => "Ibrahim",
-    'last_name'    => "El Gibran",
-    'address'      => "Yogyakarta, Indonesia.",
-    'city'         => "Sleman",
-    'postal_code'  => "55581",
-    'phone'        => "085876076005",
+    'first_name'   => "Andri",
+    'last_name'    => "Setiawan",
+    'address'      => "Karet Belakang 15A, Setiabudi.",
+    'city'         => "Jakarta",
+    'postal_code'  => "51161",
+    'phone'        => "081322311801",
     'country_code' => 'IDN'
   );
 
@@ -69,17 +69,17 @@ $shipping_address = array(
     'last_name'    => "Watson",
     'address'      => "Bakerstreet 221B.",
     'city'         => "Jakarta",
-    'postal_code'  => "55581",
-    'phone'        => "085876076005",
+    'postal_code'  => "51162",
+    'phone'        => "081322311801",
     'country_code' => 'IDN'
   );
 
 // Populate customer's info
 $customer_details = array(
-    'first_name'       => "IEG",
-    'last_name'        => "CODE",
-    'email'            => "iegcodeid@gmail.com",
-    'phone'            => "085876076005",
+    'first_name'       => "Andri",
+    'last_name'        => "Setiawan",
+    'email'            => "andri@setiawan.com",
+    'phone'            => "081322311801",
     'billing_address'  => $billing_address,
     'shipping_address' => $shipping_address
   );
@@ -100,7 +100,7 @@ $transaction_data = array(
     'customer_details'    => $customer_details
   );
 
-  try {
+try {
     $response = CoreApi::charge($transaction_data);
 } catch (Exception $e) {
     echo $e->getMessage();

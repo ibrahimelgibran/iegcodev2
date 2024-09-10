@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta name="description" content="Icewall admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Icewall Admin Template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="LEFT4CODE">
-    <title><?= $title ?> | IEGCODE</title>
+    <title><?= $title ?> | IEG</title>
       <!-- Font Awesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- BEGIN: CSS Assets-->

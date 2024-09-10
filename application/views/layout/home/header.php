@@ -24,8 +24,8 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta name="robots" content="index,follow" />
     <meta name="revised" content="Sunday, Des, 24th, 2024, 5:15 pm" />
     <meta name="designer" content="iegocde, iegcodeid@gmail.com">
-    <meta name="reply-to" content="info@smkmuhammadiyahgamping.sch.id">
-    <meta name="owner" content="smkmuhammadiyahgamping">
+    <meta name="reply-to" content="elgibran@iegcode.com">
+    <meta name="owner" content="iegcode">
     <meta http-equiv="imagetoolbar" content="no" />
     <meta name="revisit-after" content="7" />
     <meta name="webcrawlers" content="all" />
@@ -124,7 +124,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <li>
                     <a href="<?= base_url('categories/jasa') ?>" class="menu">
                         <div class="side-menu__icon"> <i data-lucide="globe"></i> </div>
-                        <div class="side-menu__title" style="margin-left: 10px;"> Pembuatan Website </div>
+                        <div class="side-menu__title" style="margin-left: 10px;"> Pembuatan Aplikasi </div>
                     </a>
                 </li>
                 <li>
@@ -327,7 +327,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <li>
                         <a href="<?= base_url('categories/jasa') ?>" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="globe"></i> </div>
-                            <div class="side-menu__title"> Pembuatan Website </div>
+                            <div class="side-menu__title"> Pembuatan Aplikasi </div>
                         </a>
                     </li>
                     <li>
